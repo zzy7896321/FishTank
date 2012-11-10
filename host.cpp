@@ -28,14 +28,14 @@ static std::pair<int, int> GetRandomCoord(){
     static Host& host = RetrieveHost();
     int x, y;
     do{
-        x = RandInt(0, N-1);
-        y = RandInt(0, M-1);
+        x = RandInt(1, N);
+        y = RandInt(1, M);
     } while (host.getMapContent(x, y) != EMPTY);
     return std::make_pair(x, y);
 }
 
 static inline bool IfCoordValid(int x, int y){
-    return x>=0 && x<=N && y>=0 && y<M;
+    return x>0 && x<=N && y>0 && y<=M;
 }
 inline bool Host::IfIdValid(int id) const{
     return id>=0 && id<iIdPoolSize && fdpIdTable[id];
@@ -115,8 +115,8 @@ void Host::Initialize(){
             fdpFishTable[i] = 0;
             fdpDeathTable[i] = 0;
         }
-        for (int i = 0; i!=N; ++i)
-        for (int j = 0; j!=M; ++j)
+        for (int i = 1; i<=N; ++i)
+        for (int j = 1; j<=M; ++j)
             ipMapContent[i][j] = EMPTY;
         iHostStatus = INITIALIZED;
 
@@ -435,8 +435,10 @@ bool Host::Start(){
                         fdpDeathTable[i]->iPosX = coord.first;
                         fdpDeathTable[i]->iPosY = coord.second;
                         fdpDeathTable[i]->iStatus = FishData_t::ALIVE;
+                        fdpDeathTable[i]->iHP = max(fdpDeathTable[i]->iMaxHP / 10, 1);
                         elhLog.FishRevived(fdpDeathTable[i]->iStatus);
                     } else {
+                        ++fdpDeathTable[i]->iRoundSinceDead;
                         fdpDeathTable[j++] = fdpDeathTable[i];
                     }
                 }

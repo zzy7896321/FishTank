@@ -70,7 +70,7 @@ private:
     FishData_t* fdpIdTable[iIdPoolSize];    //to retrieve fishdata with id
     FishData_t* fdpFishTable[MAX_PLAYER];   //for traversal of all fish
 
-    int ipMapContent[N][M];   //map
+    int ipMapContent[N+1][M+1];   //map
 
     int iDeathCount;    //the number of dead fish
     FishData_t* fdpDeathTable[MAX_PLAYER];   //fish to revive nextRound
