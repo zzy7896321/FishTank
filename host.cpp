@@ -192,11 +192,11 @@ int Host::getSp(int id) const{
 }
 
 int Host::getMapContent(int x, int y) const{
-    return (IfCoordValid(x,y)) ? (ipMapContent[x][y]) : INVALID_VALUE;
+    return (IfCoordValid(x,y)) ? (ipMapContent[x][y]) : EMPTY;
 }
 
 int Host::getMapContentWithId(int x, int y, int id) const{
-    return (IfIdValid(id) && fdpIdTable[id]->iStatus != FishData_t::DEAD) ? getMapContent(x,y) : INVALID_VALUE;
+    return (IfIdValid(id) && fdpIdTable[id]->iStatus != FishData_t::DEAD) ? getMapContent(x,y) : EMPTY;
 }
 
 int Host::getDeadCount(int id) const{
