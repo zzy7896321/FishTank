@@ -436,7 +436,7 @@ bool Host::Start(){
                         fdpDeathTable[i]->iPosY = coord.second;
                         fdpDeathTable[i]->iStatus = FishData_t::ALIVE;
                         fdpDeathTable[i]->iHP = max(fdpDeathTable[i]->iMaxHP / 10, 1);
-                        elhLog.FishRevived(fdpDeathTable[i]->iStatus);
+                        elhLog.FishRevived(fdpDeathTable[i]->iId);
                     } else {
                         ++fdpDeathTable[i]->iRoundSinceDead;
                         fdpDeathTable[j++] = fdpDeathTable[i];
