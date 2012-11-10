@@ -67,7 +67,7 @@ private:
     int iPlayerCount;    //the number of players online
     int ipIdPool[iIdPoolSize];     //ids in [iPlayerCount..iIdPoolSize-1] are available for allocation
 
-    FishData_t* fdpIdTable[iIdPoolSize];    //to retrieve fishdata with id
+    FishData_t* fdpIdTable[iIdPoolSize+1];    //to retrieve fishdata with id
     FishData_t* fdpFishTable[MAX_PLAYER];   //for traversal of all fish
 
     int ipMapContent[N+1][M+1];   //map

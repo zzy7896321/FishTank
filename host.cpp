@@ -107,8 +107,10 @@ void Host::Initialize(){
     if (iHostStatus == DESTROYED){
         iPlayerCount = 0;
         for (int i = 0; i!=iIdPoolSize; ++i){
-            ipIdPool[i] = i;
-            fdpIdTable[i] = 0;
+            ipIdPool[i] = i+1;
+        }
+        for (int i = 0; i<=iIdPoolSize; ++i){
+            fdpIdTable[i+1] = 0;
         }
         iDeathCount = 0;
         for (int i = 0; i!=MAX_PLAYER; ++i){
