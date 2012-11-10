@@ -49,6 +49,7 @@ void FileLogger::GameEnded(time_t tmTime, const int* iId){
         << setw(7) << "Points"
         << setw(7) << "Bonus"
         << setw(7) << "Exp"
+        << setw(7) << "Level"
         << setw(7) << "Kill"
         << setw(7) << "Dead"
         << setw(7) << "Attack"
@@ -62,6 +63,7 @@ void FileLogger::GameEnded(time_t tmTime, const int* iId){
             << setw(7) << host.getPoint(x)
             << setw(7) << host.getKillBonus(x)
             << setw(7) << host.getExp(x)
+            << setw(7) << host.getLevel(x)
             << setw(7) << host.getKillCount(x)
             << setw(7) << host.getDeadCount(x)
             << setw(7) << host.getAtt(x)
@@ -117,7 +119,7 @@ void FileLogger::FishInAction(int iId){
         Out << ".........<Fish Properties>" << std::endl;
         Out << ".........Remaining property points: " << host.getPropertyPoint(iId) << std::endl;
         Out << ".........Points: " << host.getPoint(iId) << std::endl;
-        Out << ".........Level: " << host.getPoint(iId) << std::endl;
+        Out << ".........Level: " << host.getLevel(iId) << std::endl;
         Out << ".........Experience: " << host.getExp(iId) << std::endl;
         Out << ".........X-coordinate: " << host.getX(iId) << std::endl;
         Out << ".........Y-coordinate: " << host.getY(iId) << std::endl;
@@ -146,7 +148,7 @@ void FileLogger::FishAttack(int iId, int iTargetPosX, int iTargetPosY, int iTarg
     default:
         Out << "fish " << iTarget;
     }
-    Out <<" at (" << iTargetPosX << " ," << iTargetPosY << "). " << pstrResultString[iResult] << std::endl;
+    Out <<" at (" << iTargetPosX << ", " << iTargetPosY << "). " << pstrResultString[iResult] << std::endl;
 }
 
 void FileLogger::FishDead(int iId){
