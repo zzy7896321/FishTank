@@ -7,7 +7,7 @@
 
 static void PrintTime(std::ostream& out, time_t tmTime){
     tm* tmLocalTime = localtime(&tmTime);
-    out << '[' << tmLocalTime->tm_year << '/'
+    out << '[' << tmLocalTime->tm_year+1900 << '/'
         << tmLocalTime->tm_mon << '/'
         << tmLocalTime->tm_mday << ' '
         << tmLocalTime->tm_hour << ':'
