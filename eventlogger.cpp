@@ -6,7 +6,7 @@ const char* pstrResultString[7] = {"Success.",     //0
                             "Failure: target is already occupied.",     //2
                             "Failure: target is out of range.",     //3
                             "Failure: target is empty.",        //4
-                            "Failure: operation is allowed once each round."    //5
+                            "Failure: operation is allowed once each round." ,   //5
                             "Failure: it's not good to commit suicide."     //6
                            };
 
