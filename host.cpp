@@ -352,7 +352,7 @@ bool Host::attack(int id, int x, int y){
     if (getMapContent(x, y) == FOOD){
         elhLog.FishAttack(id, x, y, getMapContent(x, y), 0);
         ipMapContent[x][y] = EMPTY;
-        IncreaseHP(id, max(2, getMaxHP(id)));
+        IncreaseHP(id, max(2, getMaxHP(id) / 10));
         IncreaseExp(id, 1);
         return true;
     } else {
