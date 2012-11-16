@@ -5,15 +5,6 @@
 #include "constants.h"
 #include "host.h"
 
-const char* pstrResultString[7] = {"Success.",     //0
-                            "Failure: invalid target coordinate.",      //1
-                            "Failure: target is already occupied.",     //2
-                            "Failure: target is out of range.",     //3
-                            "Failure: target is empty.",        //4
-                            "Failure: operation is allowed once each round."    //5
-                            "Failure: it's not good to commit suicide."     //6
-                           };
-
 static void PrintTime(std::ostream& out, time_t tmTime){
     tm* tmLocalTime = localtime(&tmTime);
     out << '[' << tmLocalTime->tm_year+1900 << '/'
@@ -49,6 +40,7 @@ void StdoutLogger::GameEnded(time_t tmTime, const int* iId){
     Out << "Result:" << endl;
     Out << std::left;
     Out << setw(7) << "Id"
+        << setw(7) << "Author"
         << setw(7) << "Points"
         << setw(7) << "Bonus"
         << setw(7) << "Exp"
@@ -63,6 +55,7 @@ void StdoutLogger::GameEnded(time_t tmTime, const int* iId){
     for (int i = 0; i<host.getPlayerCount(); ++i){
         int x = iId[i];
         Out << setw(7) << x
+            << setw(7) << host.getIdentifier(x)
             << setw(7) << host.getPoint(x)
             << setw(7) << host.getKillBonus(x)
             << setw(7) << host.getExp(x)
@@ -128,7 +121,7 @@ void StdoutLogger::FishInAction(int iId){
         Out << ".........X-coordinate: " << host.getX(iId) << std::endl;
         Out << ".........Y-coordinate: " << host.getY(iId) << std::endl;
         Out << ".........HP: " << host.getHP(iId) << std::endl;
-        Out << ".........MaxHP:" << host.getHP(iId) << std::endl;
+        Out << ".........MaxHP:" << host.getMaxHP(iId) << std::endl;
         Out << ".........Attack: " << host.getAtt(iId) << std::endl;
         Out << ".........Speed: " << host.getSp(iId) << std::endl;
     #endif

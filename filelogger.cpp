@@ -46,6 +46,7 @@ void FileLogger::GameEnded(time_t tmTime, const int* iId){
     Out << "Result:" << endl;
     Out << std::left;
     Out << setw(7) << "Id"
+        << setw(7) << "Author"
         << setw(7) << "Points"
         << setw(7) << "Bonus"
         << setw(7) << "Exp"
@@ -60,6 +61,7 @@ void FileLogger::GameEnded(time_t tmTime, const int* iId){
     for (int i = 0; i<host.getPlayerCount(); ++i){
         int x = iId[i];
         Out << setw(7) << x
+            << setw(7) << host.getIdentifier(x)
             << setw(7) << host.getPoint(x)
             << setw(7) << host.getKillBonus(x)
             << setw(7) << host.getExp(x)
@@ -124,7 +126,7 @@ void FileLogger::FishInAction(int iId){
         Out << ".........X-coordinate: " << host.getX(iId) << std::endl;
         Out << ".........Y-coordinate: " << host.getY(iId) << std::endl;
         Out << ".........HP: " << host.getHP(iId) << std::endl;
-        Out << ".........MaxHP:" << host.getHP(iId) << std::endl;
+        Out << ".........MaxHP:" << host.getMaxHP(iId) << std::endl;
         Out << ".........Attack: " << host.getAtt(iId) << std::endl;
         Out << ".........Speed: " << host.getSp(iId) << std::endl;
     #endif

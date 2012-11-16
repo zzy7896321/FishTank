@@ -1,6 +1,15 @@
 #include "eventlogger.h"
 #include "host.h"
 
+const char* pstrResultString[7] = {"Success.",     //0
+                            "Failure: invalid target coordinate.",      //1
+                            "Failure: target is already occupied.",     //2
+                            "Failure: target is out of range.",     //3
+                            "Failure: target is empty.",        //4
+                            "Failure: operation is allowed once each round."    //5
+                            "Failure: it's not good to commit suicide."     //6
+                           };
+
 EventLogger::EventLogger(const std::string& strId):strIdentifier(strId), host(RetrieveHost()){}
 
 EventLoggerHub::EventLoggerHub():elList(){}

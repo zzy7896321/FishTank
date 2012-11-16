@@ -72,7 +72,9 @@ Host::~Host(){
 
 void Host::SetLogger(){
     elhLog.AddLogger(new FileLogger("result.txt"));
-    elhLog.AddLogger(new StdoutLogger);
+    #ifdef _ENABLE_STDOUTLOGGER_
+        elhLog.AddLogger(new StdoutLogger);
+    #endif
 }
 
 void Host::FirstSetup(){
@@ -127,9 +129,9 @@ void Host::Initialize(){
 }
 
 FishData_t::FishData_t(int id, fish* fIns):iId(id), iPropertyPoint(INITIAL_PROPERTY_POINT), iHP(0), iMaxHP(0), iStrength(0), iSpeed(0), iExp(0),
-                                                iLevel(1), iPosX(INVALID_VALUE), iPosY(INVALID_VALUE), iKillBonus(0), iKillCount(0), iDeadCount(0),
-                                                iPhase(END), iStatus(DEAD), iRoundSinceDead(0), fishInstance(fIns)
-                                                {}
+                                           iLevel(1), iPosX(INVALID_VALUE), iPosY(INVALID_VALUE), iKillBonus(0), iKillCount(0), iDeadCount(0),
+                                           strIdentifier(), iPhase(END), iStatus(DEAD), iRoundSinceDead(0), fishInstance(fIns)
+                                           {}
 
 FishData_t::~FishData_t(){
     delete fishInstance;
@@ -215,6 +217,10 @@ int Host::getKillBonus(int id) const{
 
 int Host::getPlayerCount() const{
     return iPlayerCount;
+}
+
+std::string Host::getIdentifier(int id) const{
+    return (IfIdValid(id)) ? (fdpIdTable[id]->strIdentifier) : "INV";
 }
 
 bool Host::move(int id, int x, int y){

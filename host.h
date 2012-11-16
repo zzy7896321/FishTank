@@ -3,6 +3,7 @@
 
 #include "constants.h"
 #include "eventlogger.h"
+#include <string>
 
 class fish;
 
@@ -15,6 +16,7 @@ struct FishData_t{
         int iPosX, iPosY;
         int iKillBonus;      // = 2 * sigma(max{0,level(victim)-level(killer))
         int iKillCount, iDeadCount;
+        std::string strIdentifier;
         enum {START, AFTER_MOVE, AFTER_ATTACK, END} iPhase;
         enum {ALIVE = 0, DEAD = 1} iStatus;
         int iRoundSinceDead;
@@ -51,6 +53,7 @@ public:
     int getKillCount(int id) const;
     int getDeadCount(int id) const;
     int getKillBonus(int id) const;
+    std::string getIdentifier(int id) const;
 
     bool move(int id, int x, int y);    //move id to (x,y)
     bool attack(int id, int x, int y);  //id commence an attack on (x,y)
