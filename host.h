@@ -62,7 +62,7 @@ public:
 
 private:
 
-    enum {iReviveAfterRound = 2, iIdPoolSize = static_cast<int>(MAX_PLAYER * 1.25)};
+    enum {iReviveAfterRound = 2, iIdPoolSize = static_cast<int>(MAX_PLAYER)};
 
     int iPlayerCount;    //the number of players online
     int ipIdPool[iIdPoolSize];     //ids in [iPlayerCount..iIdPoolSize-1] are available for allocation

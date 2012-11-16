@@ -21,7 +21,7 @@ static inline int max(int a, int b){
 }
 
 static inline int RandInt(int a, int b){
-    return static_cast<int>((static_cast<double>(rand()) / RAND_MAX) * (b-a) + a);
+    return static_cast<int>(((static_cast<unsigned>(rand()) << 16) + (static_cast<unsigned>(rand()))) % (b-a+1) + a);
 }
 
 static std::pair<int, int> GetRandomCoord(){
@@ -38,7 +38,7 @@ static inline bool IfCoordValid(int x, int y){
     return x>0 && x<=N && y>0 && y<=M;
 }
 inline bool Host::IfIdValid(int id) const{
-    return id>=0 && id<iIdPoolSize && fdpIdTable[id];
+    return id>=1 && id<=iIdPoolSize && fdpIdTable[id];
 }
 
 static inline int ManhattanDistance(int x1, int y1, int x2, int y2){
