@@ -61,7 +61,7 @@ void FileLogger::GameEnded(time_t tmTime, const int* iId){
     for (int i = 0; i<host.getPlayerCount(); ++i){
         int x = iId[i];
         Out << setw(7) << x
-            << setw(7) << host.getIdentifier(x)
+            << setw(7) << host.getIdentifier(x).mb_str()
             << setw(7) << host.getPoint(x)
             << setw(7) << host.getKillBonus(x)
             << setw(7) << host.getExp(x)
@@ -135,7 +135,7 @@ void FileLogger::FishInAction(int iId){
 void FileLogger::FishMove(int iId, int iFormerPosX, int iFormerPosY, int iTargetPosX, int iTargetPosY, int iResult){
     Out << ".........Fish " << iId << " attempts to move from (" << iFormerPosX << ", "
          << iFormerPosY << ") to (" <<  iTargetPosX << ", " << iTargetPosY << "). "
-         << pstrResultString[iResult] << std::endl;
+         << strResultString[iResult].mb_str() << std::endl;
 }
 
 void FileLogger::FishAttack(int iId, int iTargetPosX, int iTargetPosY, int iTarget, int iResult){
@@ -150,10 +150,10 @@ void FileLogger::FishAttack(int iId, int iTargetPosX, int iTargetPosY, int iTarg
     default:
         Out << "fish " << iTarget;
     }
-    Out <<" at (" << iTargetPosX << ", " << iTargetPosY << "). " << pstrResultString[iResult] << std::endl;
+    Out <<" at (" << iTargetPosX << ", " << iTargetPosY << "). " << strResultString[iResult].mb_str() << std::endl;
 }
 
-void FileLogger::FishDead(int iId){
+void FileLogger::FishDead(int iId, int iPosX, int iPosY){
     Out << ".........Fish " << iId << " is dead" << std::endl;
 }
 
@@ -171,9 +171,7 @@ void FileLogger::FishHPModified(int iId){
     Out << ".........Fish " << iId << "'s HP is now " << host.getHP(iId) << std::endl;
 }
 
-void FileLogger::FishActionFinished(int iId){
-    Out << "......Fish " << iId << " quits action normally." << std::endl;
-}
+void FileLogger::FishActionFinished(int iId){}
 
 void FileLogger::FishTimeout(int iId, int iTimeUsage){
     Out << "......Fish " << iId << " exceeds time limit. Time usage: " << iTimeUsage << "ms." << std::endl;

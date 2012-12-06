@@ -1,0 +1,1370 @@
+[2012/11/6 16:57:23] Host is initialized.
+[2012/11/6 16:57:23] 40 AI(s) are set up.
+[2012/11/6 16:57:24] Game is started.
+.........Fish 18's HP is now 2
+.........Fish 18's HP is now 4
+.........Fish 18's HP is now 6
+.........Fish 18's HP is now 8
+.........Fish 18's HP is now 10
+...Fish 18 is born at (4, 5).
+.........Fish 7's HP is now 2
+.........Fish 7's HP is now 4
+.........Fish 7's HP is now 6
+.........Fish 7's HP is now 8
+.........Fish 7's HP is now 10
+...Fish 7 is born at (29, 7).
+.........Fish 26's HP is now 2
+.........Fish 26's HP is now 4
+.........Fish 26's HP is now 6
+.........Fish 26's HP is now 8
+.........Fish 26's HP is now 10
+...Fish 26 is born at (17, 26).
+.........Fish 16's HP is now 2
+.........Fish 16's HP is now 4
+.........Fish 16's HP is now 6
+.........Fish 16's HP is now 8
+.........Fish 16's HP is now 10
+...Fish 16 is born at (4, 28).
+.........Fish 28's HP is now 2
+.........Fish 28's HP is now 4
+.........Fish 28's HP is now 6
+.........Fish 28's HP is now 8
+.........Fish 28's HP is now 10
+...Fish 28 is born at (23, 29).
+.........Fish 13's HP is now 2
+.........Fish 13's HP is now 4
+.........Fish 13's HP is now 6
+.........Fish 13's HP is now 8
+.........Fish 13's HP is now 10
+...Fish 13 is born at (21, 26).
+.........Fish 30's HP is now 2
+.........Fish 30's HP is now 4
+.........Fish 30's HP is now 6
+.........Fish 30's HP is now 8
+.........Fish 30's HP is now 10
+...Fish 30 is born at (15, 13).
+.........Fish 17's HP is now 2
+.........Fish 17's HP is now 4
+.........Fish 17's HP is now 6
+.........Fish 17's HP is now 8
+.........Fish 17's HP is now 10
+...Fish 17 is born at (24, 39).
+.........Fish 23's HP is now 2
+.........Fish 23's HP is now 4
+.........Fish 23's HP is now 6
+.........Fish 23's HP is now 8
+.........Fish 23's HP is now 10
+...Fish 23 is born at (35, 17).
+.........Fish 25's HP is now 2
+.........Fish 25's HP is now 4
+.........Fish 25's HP is now 6
+.........Fish 25's HP is now 8
+.........Fish 25's HP is now 10
+...Fish 25 is born at (12, 15).
+.........Fish 15's HP is now 2
+.........Fish 15's HP is now 4
+.........Fish 15's HP is now 6
+.........Fish 15's HP is now 8
+.........Fish 15's HP is now 10
+...Fish 15 is born at (20, 6).
+.........Fish 19's HP is now 2
+.........Fish 19's HP is now 4
+.........Fish 19's HP is now 6
+.........Fish 19's HP is now 8
+.........Fish 19's HP is now 10
+...Fish 19 is born at (33, 8).
+.........Fish 11's HP is now 2
+.........Fish 11's HP is now 4
+.........Fish 11's HP is now 6
+.........Fish 11's HP is now 8
+.........Fish 11's HP is now 10
+...Fish 11 is born at (37, 37).
+.........Fish 20's HP is now 2
+.........Fish 20's HP is now 4
+.........Fish 20's HP is now 6
+.........Fish 20's HP is now 8
+.........Fish 20's HP is now 10
+...Fish 20 is born at (30, 12).
+.........Fish 6's HP is now 2
+.........Fish 6's HP is now 4
+.........Fish 6's HP is now 6
+.........Fish 6's HP is now 8
+.........Fish 6's HP is now 10
+...Fish 6 is born at (30, 3).
+.........Fish 37's HP is now 2
+.........Fish 37's HP is now 4
+.........Fish 37's HP is now 6
+.........Fish 37's HP is now 8
+.........Fish 37's HP is now 10
+...Fish 37 is born at (12, 3).
+.........Fish 38's HP is now 2
+.........Fish 38's HP is now 4
+.........Fish 38's HP is now 6
+.........Fish 38's HP is now 8
+.........Fish 38's HP is now 10
+...Fish 38 is born at (35, 23).
+.........Fish 10's HP is now 2
+.........Fish 10's HP is now 4
+.........Fish 10's HP is now 6
+.........Fish 10's HP is now 8
+.........Fish 10's HP is now 10
+...Fish 10 is born at (33, 22).
+.........Fish 9's HP is now 2
+.........Fish 9's HP is now 4
+.........Fish 9's HP is now 6
+.........Fish 9's HP is now 8
+.........Fish 9's HP is now 10
+...Fish 9 is born at (10, 31).
+.........Fish 5's HP is now 2
+.........Fish 5's HP is now 4
+.........Fish 5's HP is now 6
+.........Fish 5's HP is now 8
+.........Fish 5's HP is now 10
+...Fish 5 is born at (38, 37).
+.........Fish 35's HP is now 2
+.........Fish 35's HP is now 4
+.........Fish 35's HP is now 6
+.........Fish 35's HP is now 8
+.........Fish 35's HP is now 10
+...Fish 35 is born at (8, 19).
+.........Fish 14's HP is now 2
+.........Fish 14's HP is now 4
+.........Fish 14's HP is now 6
+.........Fish 14's HP is now 8
+.........Fish 14's HP is now 10
+...Fish 14 is born at (17, 33).
+.........Fish 22's HP is now 2
+.........Fish 22's HP is now 4
+.........Fish 22's HP is now 6
+.........Fish 22's HP is now 8
+.........Fish 22's HP is now 10
+...Fish 22 is born at (5, 24).
+.........Fish 4's HP is now 2
+.........Fish 4's HP is now 4
+.........Fish 4's HP is now 6
+.........Fish 4's HP is now 8
+.........Fish 4's HP is now 10
+...Fish 4 is born at (20, 11).
+.........Fish 36's HP is now 2
+.........Fish 36's HP is now 4
+.........Fish 36's HP is now 6
+.........Fish 36's HP is now 8
+.........Fish 36's HP is now 10
+...Fish 36 is born at (11, 6).
+.........Fish 31's HP is now 2
+.........Fish 31's HP is now 4
+.........Fish 31's HP is now 6
+.........Fish 31's HP is now 8
+.........Fish 31's HP is now 10
+...Fish 31 is born at (4, 3).
+.........Fish 8's HP is now 2
+.........Fish 8's HP is now 4
+.........Fish 8's HP is now 6
+.........Fish 8's HP is now 8
+.........Fish 8's HP is now 10
+...Fish 8 is born at (35, 19).
+.........Fish 24's HP is now 2
+.........Fish 24's HP is now 4
+.........Fish 24's HP is now 6
+.........Fish 24's HP is now 8
+.........Fish 24's HP is now 10
+...Fish 24 is born at (35, 2).
+.........Fish 12's HP is now 2
+.........Fish 12's HP is now 4
+.........Fish 12's HP is now 6
+.........Fish 12's HP is now 8
+.........Fish 12's HP is now 10
+...Fish 12 is born at (17, 30).
+.........Fish 2's HP is now 2
+.........Fish 2's HP is now 4
+.........Fish 2's HP is now 6
+.........Fish 2's HP is now 8
+.........Fish 2's HP is now 10
+...Fish 2 is born at (6, 25).
+.........Fish 3's HP is now 2
+.........Fish 3's HP is now 4
+.........Fish 3's HP is now 6
+.........Fish 3's HP is now 8
+.........Fish 3's HP is now 10
+...Fish 3 is born at (27, 13).
+.........Fish 21's HP is now 2
+.........Fish 21's HP is now 4
+.........Fish 21's HP is now 6
+.........Fish 21's HP is now 8
+.........Fish 21's HP is now 10
+...Fish 21 is born at (8, 15).
+.........Fish 39's HP is now 2
+.........Fish 39's HP is now 4
+.........Fish 39's HP is now 6
+.........Fish 39's HP is now 8
+.........Fish 39's HP is now 10
+...Fish 39 is born at (29, 31).
+.........Fish 1's HP is now 2
+.........Fish 1's HP is now 4
+.........Fish 1's HP is now 6
+.........Fish 1's HP is now 8
+.........Fish 1's HP is now 10
+...Fish 1 is born at (21, 7).
+.........Fish 33's HP is now 2
+.........Fish 33's HP is now 4
+.........Fish 33's HP is now 6
+.........Fish 33's HP is now 8
+.........Fish 33's HP is now 10
+...Fish 33 is born at (24, 10).
+.........Fish 34's HP is now 2
+.........Fish 34's HP is now 4
+.........Fish 34's HP is now 6
+.........Fish 34's HP is now 8
+.........Fish 34's HP is now 10
+...Fish 34 is born at (40, 32).
+.........Fish 27's HP is now 2
+.........Fish 27's HP is now 4
+.........Fish 27's HP is now 6
+.........Fish 27's HP is now 8
+.........Fish 27's HP is now 10
+...Fish 27 is born at (30, 23).
+.........Fish 29's HP is now 2
+.........Fish 29's HP is now 4
+.........Fish 29's HP is now 6
+.........Fish 29's HP is now 8
+.........Fish 29's HP is now 10
+...Fish 29 is born at (5, 19).
+.........Fish 32's HP is now 2
+.........Fish 32's HP is now 4
+.........Fish 32's HP is now 6
+.........Fish 32's HP is now 8
+.........Fish 32's HP is now 10
+...Fish 32 is born at (7, 17).
+.........Fish 40's HP is now 2
+.........Fish 40's HP is now 4
+.........Fish 40's HP is now 6
+.........Fish 40's HP is now 8
+.........Fish 40's HP is now 10
+...Fish 40 is born at (32, 8).
+...Food is refreshed.
+...Round 0
+...Sequence is decided.
+......Fish 35 is now in action.
+.........Fish 35 attempts to move from (8, 19) to (4, 19). Success.
+.........Fish(att= 1) 35 attempts to attack fish 29 at (5, 19). Success.
+.........Fish 29's HP is now 9
+......Fish 14 is now in action.
+.........Fish 14 attempts to move from (17, 33) to (16, 30). Success.
+.........Fish(att= 1) 14 attempts to attack fish 12 at (17, 30). Success.
+.........Fish 12's HP is now 9
+......Fish 22 is now in action.
+.........Fish 22 attempts to move from (5, 24) to (4, 24). Success.
+......Fish 4 is now in action.
+.........Fish 4 attempts to move from (20, 11) to (19, 11). Success.
+......Fish 36 is now in action.
+.........Fish 36 attempts to move from (11, 6) to (10, 6). Success.
+......Fish 31 is now in action.
+.........Fish 31 attempts to move from (4, 3) to (3, 3). Success.
+......Fish 8 is now in action.
+.........Fish 8 attempts to move from (35, 19) to (33, 21). Success.
+.........Fish(att= 1) 8 attempts to attack fish 10 at (33, 22). Success.
+.........Fish 10's HP is now 9
+......Fish 24 is now in action.
+.........Fish 24 attempts to move from (35, 2) to (34, 2). Success.
+......Fish 12 is now in action.
+.........Fish 12 attempts to move from (17, 30) to (15, 30). Success.
+.........Fish(att= 1) 12 attempts to attack fish 14 at (16, 30). Success.
+.........Fish 14's HP is now 9
+......Fish 2 is now in action.
+.........Fish 2 attempts to move from (6, 25) to (3, 24). Success.
+.........Fish(att= 1) 2 attempts to attack fish 22 at (4, 24). Success.
+.........Fish 22's HP is now 9
+......Fish 3 is now in action.
+.........Fish 3 attempts to move from (27, 13) to (24, 13). Success.
+.........Fish(att= 1) 3 attempts to attack food at (23, 13). Success.
+......Fish 21 is now in action.
+.........Fish 21 attempts to move from (8, 15) to (4, 15). Success.
+.........Fish(att= 1) 21 attempts to attack food at (4, 14). Success.
+......Fish 39 is now in action.
+.........Fish 39 attempts to move from (29, 31) to (27, 30). Success.
+.........Fish(att= 1) 39 attempts to attack food at (27, 29). Success.
+[2012/11/6 16:57:27] Game is ended.
+Result:
+Id     Author Points Bonus  Exp    Level  Kill   Dead   Attack Speed  HP     MaxHP  
+39     TAAI   1      0      1      1      0      0      1      4      10     10     
+21     TAAI   1      0      1      1      0      0      1      4      10     10     
+3      TAAI   1      0      1      1      0      0      1      4      10     10     
+26     TAAI   0      0      0      1      0      0      1      4      10     10     
+16     TAAI   0      0      0      1      0      0      1      4      10     10     
+28     TAAI   0      0      0      1      0      0      1      4      10     10     
+13     TAAI   0      0      0      1      0      0      1      4      10     10     
+30     TAAI   0      0      0      1      0      0      1      4      10     10     
+17     TAAI   0      0      0      1      0      0      1      4      10     10     
+23     TAAI   0      0      0      1      0      0      1      4      10     10     
+25     TAAI   0      0      0      1      0      0      1      4      10     10     
+15     TAAI   0      0      0      1      0      0      1      4      10     10     
+19     TAAI   0      0      0      1      0      0      1      4      10     10     
+11     TAAI   0      0      0      1      0      0      1      4      10     10     
+20     TAAI   0      0      0      1      0      0      1      4      10     10     
+6      TAAI   0      0      0      1      0      0      1      4      10     10     
+37     TAAI   0      0      0      1      0      0      1      4      10     10     
+38     TAAI   0      0      0      1      0      0      1      4      10     10     
+10     TAAI   0      0      0      1      0      0      1      4      9      10     
+9      TAAI   0      0      0      1      0      0      1      4      10     10     
+5      TAAI   0      0      0      1      0      0      1      4      10     10     
+35     TAAI   0      0      0      1      0      0      1      4      10     10     
+14     TAAI   0      0      0      1      0      0      1      4      9      10     
+22     TAAI   0      0      0      1      0      0      1      4      9      10     
+4      TAAI   0      0      0      1      0      0      1      4      10     10     
+36     TAAI   0      0      0      1      0      0      1      4      10     10     
+31     TAAI   0      0      0      1      0      0      1      4      10     10     
+8      TAAI   0      0      0      1      0      0      1      4      10     10     
+24     TAAI   0      0      0      1      0      0      1      4      10     10     
+12     TAAI   0      0      0      1      0      0      1      4      9      10     
+2      TAAI   0      0      0      1      0      0      1      4      10     10     
+1      TAAI   0      0      0      1      0      0      1      4      10     10     
+33     TAAI   0      0      0      1      0      0      1      4      10     10     
+34     TAAI   0      0      0      1      0      0      1      4      10     10     
+27     TAAI   0      0      0      1      0      0      1      4      10     10     
+29     TAAI   0      0      0      1      0      0      1      4      9      10     
+32     TAAI   0      0      0      1      0      0      1      4      10     10     
+40     TAAI   0      0      0      1      0      0      1      4      10     10     
+18     TAAI   0      0      0      1      0      0      1      4      10     10     
+7      TAAI   0      0      0      1      0      0      1      4      10     10     
+[2012/11/6 16:57:28] Host is destroyed.
+[2012/11/6 16:57:28] Host is initialized.
+[2012/11/6 16:57:28] 40 AI(s) are set up.
+[2012/11/6 16:57:28] Game is started.
+.........Fish 28's HP is now 2
+.........Fish 28's HP is now 4
+.........Fish 28's HP is now 6
+.........Fish 28's HP is now 8
+.........Fish 28's HP is now 10
+...Fish 28 is born at (4, 5).
+.........Fish 15's HP is now 2
+.........Fish 15's HP is now 4
+.........Fish 15's HP is now 6
+.........Fish 15's HP is now 8
+.........Fish 15's HP is now 10
+...Fish 15 is born at (29, 7).
+.........Fish 37's HP is now 2
+.........Fish 37's HP is now 4
+.........Fish 37's HP is now 6
+.........Fish 37's HP is now 8
+.........Fish 37's HP is now 10
+...Fish 37 is born at (17, 26).
+.........Fish 32's HP is now 2
+.........Fish 32's HP is now 4
+.........Fish 32's HP is now 6
+.........Fish 32's HP is now 8
+.........Fish 32's HP is now 10
+...Fish 32 is born at (4, 28).
+.........Fish 2's HP is now 2
+.........Fish 2's HP is now 4
+.........Fish 2's HP is now 6
+.........Fish 2's HP is now 8
+.........Fish 2's HP is now 10
+...Fish 2 is born at (23, 29).
+.........Fish 39's HP is now 2
+.........Fish 39's HP is now 4
+.........Fish 39's HP is now 6
+.........Fish 39's HP is now 8
+.........Fish 39's HP is now 10
+...Fish 39 is born at (21, 26).
+.........Fish 13's HP is now 2
+.........Fish 13's HP is now 4
+.........Fish 13's HP is now 6
+.........Fish 13's HP is now 8
+.........Fish 13's HP is now 10
+...Fish 13 is born at (15, 13).
+.........Fish 21's HP is now 2
+.........Fish 21's HP is now 4
+.........Fish 21's HP is now 6
+.........Fish 21's HP is now 8
+.........Fish 21's HP is now 10
+...Fish 21 is born at (24, 39).
+.........Fish 30's HP is now 2
+.........Fish 30's HP is now 4
+.........Fish 30's HP is now 6
+.........Fish 30's HP is now 8
+.........Fish 30's HP is now 10
+...Fish 30 is born at (35, 17).
+.........Fish 3's HP is now 2
+.........Fish 3's HP is now 4
+.........Fish 3's HP is now 6
+.........Fish 3's HP is now 8
+.........Fish 3's HP is now 10
+...Fish 3 is born at (12, 15).
+.........Fish 36's HP is now 2
+.........Fish 36's HP is now 4
+.........Fish 36's HP is now 6
+.........Fish 36's HP is now 8
+.........Fish 36's HP is now 10
+...Fish 36 is born at (20, 6).
+.........Fish 26's HP is now 2
+.........Fish 26's HP is now 4
+.........Fish 26's HP is now 6
+.........Fish 26's HP is now 8
+.........Fish 26's HP is now 10
+...Fish 26 is born at (33, 8).
+.........Fish 8's HP is now 2
+.........Fish 8's HP is now 4
+.........Fish 8's HP is now 6
+.........Fish 8's HP is now 8
+.........Fish 8's HP is now 10
+...Fish 8 is born at (37, 37).
+.........Fish 17's HP is now 2
+.........Fish 17's HP is now 4
+.........Fish 17's HP is now 6
+.........Fish 17's HP is now 8
+.........Fish 17's HP is now 10
+...Fish 17 is born at (30, 12).
+.........Fish 11's HP is now 2
+.........Fish 11's HP is now 4
+.........Fish 11's HP is now 6
+.........Fish 11's HP is now 8
+.........Fish 11's HP is now 10
+...Fish 11 is born at (30, 3).
+.........Fish 38's HP is now 2
+.........Fish 38's HP is now 4
+.........Fish 38's HP is now 6
+.........Fish 38's HP is now 8
+.........Fish 38's HP is now 10
+...Fish 38 is born at (12, 3).
+.........Fish 1's HP is now 2
+.........Fish 1's HP is now 4
+.........Fish 1's HP is now 6
+.........Fish 1's HP is now 8
+.........Fish 1's HP is now 10
+...Fish 1 is born at (35, 23).
+.........Fish 23's HP is now 2
+.........Fish 23's HP is now 4
+.........Fish 23's HP is now 6
+.........Fish 23's HP is now 8
+.........Fish 23's HP is now 10
+...Fish 23 is born at (33, 22).
+.........Fish 6's HP is now 2
+.........Fish 6's HP is now 4
+.........Fish 6's HP is now 6
+.........Fish 6's HP is now 8
+.........Fish 6's HP is now 10
+...Fish 6 is born at (10, 31).
+.........Fish 25's HP is now 2
+.........Fish 25's HP is now 4
+.........Fish 25's HP is now 6
+.........Fish 25's HP is now 8
+.........Fish 25's HP is now 10
+...Fish 25 is born at (38, 37).
+.........Fish 10's HP is now 2
+.........Fish 10's HP is now 4
+.........Fish 10's HP is now 6
+.........Fish 10's HP is now 8
+.........Fish 10's HP is now 10
+...Fish 10 is born at (8, 19).
+.........Fish 40's HP is now 2
+.........Fish 40's HP is now 4
+.........Fish 40's HP is now 6
+.........Fish 40's HP is now 8
+.........Fish 40's HP is now 10
+...Fish 40 is born at (17, 33).
+.........Fish 35's HP is now 2
+.........Fish 35's HP is now 4
+.........Fish 35's HP is now 6
+.........Fish 35's HP is now 8
+.........Fish 35's HP is now 10
+...Fish 35 is born at (5, 24).
+.........Fish 5's HP is now 2
+.........Fish 5's HP is now 4
+.........Fish 5's HP is now 6
+.........Fish 5's HP is now 8
+.........Fish 5's HP is now 10
+...Fish 5 is born at (20, 11).
+.........Fish 18's HP is now 2
+.........Fish 18's HP is now 4
+.........Fish 18's HP is now 6
+.........Fish 18's HP is now 8
+.........Fish 18's HP is now 10
+...Fish 18 is born at (11, 6).
+.........Fish 29's HP is now 2
+.........Fish 29's HP is now 4
+.........Fish 29's HP is now 6
+.........Fish 29's HP is now 8
+.........Fish 29's HP is now 10
+...Fish 29 is born at (4, 3).
+.........Fish 20's HP is now 2
+.........Fish 20's HP is now 4
+.........Fish 20's HP is now 6
+.........Fish 20's HP is now 8
+.........Fish 20's HP is now 10
+...Fish 20 is born at (35, 19).
+.........Fish 19's HP is now 2
+.........Fish 19's HP is now 4
+.........Fish 19's HP is now 6
+.........Fish 19's HP is now 8
+.........Fish 19's HP is now 10
+...Fish 19 is born at (35, 2).
+.........Fish 27's HP is now 2
+.........Fish 27's HP is now 4
+.........Fish 27's HP is now 6
+.........Fish 27's HP is now 8
+.........Fish 27's HP is now 10
+...Fish 27 is born at (17, 30).
+.........Fish 9's HP is now 2
+.........Fish 9's HP is now 4
+.........Fish 9's HP is now 6
+.........Fish 9's HP is now 8
+.........Fish 9's HP is now 10
+...Fish 9 is born at (6, 25).
+.........Fish 16's HP is now 2
+.........Fish 16's HP is now 4
+.........Fish 16's HP is now 6
+.........Fish 16's HP is now 8
+.........Fish 16's HP is now 10
+...Fish 16 is born at (27, 13).
+.........Fish 12's HP is now 2
+.........Fish 12's HP is now 4
+.........Fish 12's HP is now 6
+.........Fish 12's HP is now 8
+.........Fish 12's HP is now 10
+...Fish 12 is born at (8, 15).
+.........Fish 14's HP is now 2
+.........Fish 14's HP is now 4
+.........Fish 14's HP is now 6
+.........Fish 14's HP is now 8
+.........Fish 14's HP is now 10
+...Fish 14 is born at (29, 31).
+.........Fish 7's HP is now 2
+.........Fish 7's HP is now 4
+.........Fish 7's HP is now 6
+.........Fish 7's HP is now 8
+.........Fish 7's HP is now 10
+...Fish 7 is born at (21, 7).
+.........Fish 34's HP is now 2
+.........Fish 34's HP is now 4
+.........Fish 34's HP is now 6
+.........Fish 34's HP is now 8
+.........Fish 34's HP is now 10
+...Fish 34 is born at (24, 10).
+.........Fish 4's HP is now 2
+.........Fish 4's HP is now 4
+.........Fish 4's HP is now 6
+.........Fish 4's HP is now 8
+.........Fish 4's HP is now 10
+...Fish 4 is born at (40, 32).
+.........Fish 31's HP is now 2
+.........Fish 31's HP is now 4
+.........Fish 31's HP is now 6
+.........Fish 31's HP is now 8
+.........Fish 31's HP is now 10
+...Fish 31 is born at (30, 23).
+.........Fish 22's HP is now 2
+.........Fish 22's HP is now 4
+.........Fish 22's HP is now 6
+.........Fish 22's HP is now 8
+.........Fish 22's HP is now 10
+...Fish 22 is born at (5, 19).
+.........Fish 24's HP is now 2
+.........Fish 24's HP is now 4
+.........Fish 24's HP is now 6
+.........Fish 24's HP is now 8
+.........Fish 24's HP is now 10
+...Fish 24 is born at (7, 17).
+.........Fish 33's HP is now 2
+.........Fish 33's HP is now 4
+.........Fish 33's HP is now 6
+.........Fish 33's HP is now 8
+.........Fish 33's HP is now 10
+...Fish 33 is born at (32, 8).
+...Food is refreshed.
+...Round 0
+...Sequence is decided.
+......Fish 10 is now in action.
+.........Fish 10 attempts to move from (8, 19) to (4, 19). Success.
+.........Fish(att= 1) 10 attempts to attack fish 22 at (5, 19). Success.
+.........Fish 22's HP is now 9
+......Fish 40 is now in action.
+.........Fish 40 attempts to move from (17, 33) to (16, 30). Success.
+.........Fish(att= 1) 40 attempts to attack fish 27 at (17, 30). Success.
+.........Fish 27's HP is now 9
+......Fish 35 is now in action.
+.........Fish 35 attempts to move from (5, 24) to (4, 24). Success.
+......Fish 5 is now in action.
+.........Fish 5 attempts to move from (20, 11) to (19, 11). Success.
+......Fish 18 is now in action.
+.........Fish 18 attempts to move from (11, 6) to (10, 6). Success.
+......Fish 29 is now in action.
+.........Fish 29 attempts to move from (4, 3) to (3, 3). Success.
+......Fish 20 is now in action.
+.........Fish 20 attempts to move from (35, 19) to (33, 21). Success.
+.........Fish(att= 1) 20 attempts to attack fish 23 at (33, 22). Success.
+.........Fish 23's HP is now 9
+......Fish 19 is now in action.
+.........Fish 19 attempts to move from (35, 2) to (34, 2). Success.
+......Fish 27 is now in action.
+.........Fish 27 attempts to move from (17, 30) to (15, 30). Success.
+.........Fish(att= 1) 27 attempts to attack fish 40 at (16, 30). Success.
+.........Fish 40's HP is now 9
+......Fish 9 is now in action.
+.........Fish 9 attempts to move from (6, 25) to (3, 24). Success.
+.........Fish(att= 1) 9 attempts to attack fish 35 at (4, 24). Success.
+.........Fish 35's HP is now 9
+......Fish 16 is now in action.
+.........Fish 16 attempts to move from (27, 13) to (24, 13). Success.
+.........Fish(att= 1) 16 attempts to attack food at (23, 13). Success.
+......Fish 12 is now in action.
+.........Fish 12 attempts to move from (8, 15) to (4, 15). Success.
+.........Fish(att= 1) 12 attempts to attack food at (4, 14). Success.
+......Fish 14 is now in action.
+.........Fish 14 attempts to move from (29, 31) to (27, 30). Success.
+.........Fish(att= 1) 14 attempts to attack food at (27, 29). Success.
+......Fish 7 is now in action.
+.........Fish 7 attempts to move from (21, 7) to (18, 6). Success.
+.........Fish(att= 1) 7 attempts to attack food at (19, 6). Success.
+......Fish 34 is now in action.
+.........Fish 34 attempts to move from (24, 10) to (23, 10). Success.
+......Fish 4 is now in action.
+.........Fish 4 attempts to move from (40, 32) to (38, 34). Success.
+.........Fish(att= 1) 4 attempts to attack food at (38, 35). Success.
+......Fish 31 is now in action.
+.........Fish 31 attempts to move from (30, 23) to (29, 23). Success.
+[2012/11/6 16:57:32] Game is ended.
+Result:
+Id     Author Points Bonus  Exp    Level  Kill   Dead   Attack Speed  HP     MaxHP  
+4      TAAI   1      0      1      1      0      0      1      4      10     10     
+7      TAAI   1      0      1      1      0      0      1      4      10     10     
+14     TAAI   1      0      1      1      0      0      1      4      10     10     
+16     TAAI   1      0      1      1      0      0      1      4      10     10     
+12     TAAI   1      0      1      1      0      0      1      4      10     10     
+32     TAAI   0      0      0      1      0      0      1      4      10     10     
+2      TAAI   0      0      0      1      0      0      1      4      10     10     
+39     TAAI   0      0      0      1      0      0      1      4      10     10     
+13     TAAI   0      0      0      1      0      0      1      4      10     10     
+21     TAAI   0      0      0      1      0      0      1      4      10     10     
+30     TAAI   0      0      0      1      0      0      1      4      10     10     
+3      TAAI   0      0      0      1      0      0      1      4      10     10     
+36     TAAI   0      0      0      1      0      0      1      4      10     10     
+26     TAAI   0      0      0      1      0      0      1      4      10     10     
+8      TAAI   0      0      0      1      0      0      1      4      10     10     
+17     TAAI   0      0      0      1      0      0      1      4      10     10     
+11     TAAI   0      0      0      1      0      0      1      4      10     10     
+38     TAAI   0      0      0      1      0      0      1      4      10     10     
+1      TAAI   0      0      0      1      0      0      1      4      10     10     
+23     TAAI   0      0      0      1      0      0      1      4      9      10     
+6      TAAI   0      0      0      1      0      0      1      4      10     10     
+25     TAAI   0      0      0      1      0      0      1      4      10     10     
+10     TAAI   0      0      0      1      0      0      1      4      10     10     
+40     TAAI   0      0      0      1      0      0      1      4      9      10     
+35     TAAI   0      0      0      1      0      0      1      4      9      10     
+5      TAAI   0      0      0      1      0      0      1      4      10     10     
+18     TAAI   0      0      0      1      0      0      1      4      10     10     
+29     TAAI   0      0      0      1      0      0      1      4      10     10     
+20     TAAI   0      0      0      1      0      0      1      4      10     10     
+19     TAAI   0      0      0      1      0      0      1      4      10     10     
+27     TAAI   0      0      0      1      0      0      1      4      9      10     
+9      TAAI   0      0      0      1      0      0      1      4      10     10     
+34     TAAI   0      0      0      1      0      0      1      4      10     10     
+31     TAAI   0      0      0      1      0      0      1      4      10     10     
+22     TAAI   0      0      0      1      0      0      1      4      9      10     
+24     TAAI   0      0      0      1      0      0      1      4      10     10     
+33     TAAI   0      0      0      1      0      0      1      4      10     10     
+28     TAAI   0      0      0      1      0      0      1      4      10     10     
+15     TAAI   0      0      0      1      0      0      1      4      10     10     
+37     TAAI   0      0      0      1      0      0      1      4      10     10     
+[2012/11/6 16:57:37] Host is destroyed.
+[2012/11/6 16:57:37] Host is initialized.
+[2012/11/6 16:57:37] 40 AI(s) are set up.
+[2012/11/6 16:57:37] Game is started.
+.........Fish 5's HP is now 2
+.........Fish 5's HP is now 4
+.........Fish 5's HP is now 6
+.........Fish 5's HP is now 8
+.........Fish 5's HP is now 10
+...Fish 5 is born at (4, 5).
+.........Fish 36's HP is now 2
+.........Fish 36's HP is now 4
+.........Fish 36's HP is now 6
+.........Fish 36's HP is now 8
+.........Fish 36's HP is now 10
+...Fish 36 is born at (29, 7).
+.........Fish 4's HP is now 2
+.........Fish 4's HP is now 4
+.........Fish 4's HP is now 6
+.........Fish 4's HP is now 8
+.........Fish 4's HP is now 10
+...Fish 4 is born at (17, 26).
+.........Fish 16's HP is now 2
+.........Fish 16's HP is now 4
+.........Fish 16's HP is now 6
+.........Fish 16's HP is now 8
+.........Fish 16's HP is now 10
+...Fish 16 is born at (4, 28).
+.........Fish 37's HP is now 2
+.........Fish 37's HP is now 4
+.........Fish 37's HP is now 6
+.........Fish 37's HP is now 8
+.........Fish 37's HP is now 10
+...Fish 37 is born at (23, 29).
+.........Fish 28's HP is now 2
+.........Fish 28's HP is now 4
+.........Fish 28's HP is now 6
+.........Fish 28's HP is now 8
+.........Fish 28's HP is now 10
+...Fish 28 is born at (21, 26).
+.........Fish 13's HP is now 2
+.........Fish 13's HP is now 4
+.........Fish 13's HP is now 6
+.........Fish 13's HP is now 8
+.........Fish 13's HP is now 10
+...Fish 13 is born at (15, 13).
+.........Fish 17's HP is now 2
+.........Fish 17's HP is now 4
+.........Fish 17's HP is now 6
+.........Fish 17's HP is now 8
+.........Fish 17's HP is now 10
+...Fish 17 is born at (24, 39).
+.........Fish 26's HP is now 2
+.........Fish 26's HP is now 4
+.........Fish 26's HP is now 6
+.........Fish 26's HP is now 8
+.........Fish 26's HP is now 10
+...Fish 26 is born at (35, 17).
+.........Fish 14's HP is now 2
+.........Fish 14's HP is now 4
+.........Fish 14's HP is now 6
+.........Fish 14's HP is now 8
+.........Fish 14's HP is now 10
+...Fish 14 is born at (12, 15).
+.........Fish 39's HP is now 2
+.........Fish 39's HP is now 4
+.........Fish 39's HP is now 6
+.........Fish 39's HP is now 8
+.........Fish 39's HP is now 10
+...Fish 39 is born at (20, 6).
+.........Fish 24's HP is now 2
+.........Fish 24's HP is now 4
+.........Fish 24's HP is now 6
+.........Fish 24's HP is now 8
+.........Fish 24's HP is now 10
+...Fish 24 is born at (33, 8).
+.........Fish 38's HP is now 2
+.........Fish 38's HP is now 4
+.........Fish 38's HP is now 6
+.........Fish 38's HP is now 8
+.........Fish 38's HP is now 10
+...Fish 38 is born at (37, 37).
+.........Fish 34's HP is now 2
+.........Fish 34's HP is now 4
+.........Fish 34's HP is now 6
+.........Fish 34's HP is now 8
+.........Fish 34's HP is now 10
+...Fish 34 is born at (30, 12).
+.........Fish 6's HP is now 2
+.........Fish 6's HP is now 4
+.........Fish 6's HP is now 6
+.........Fish 6's HP is now 8
+.........Fish 6's HP is now 10
+...Fish 6 is born at (30, 3).
+.........Fish 23's HP is now 2
+.........Fish 23's HP is now 4
+.........Fish 23's HP is now 6
+.........Fish 23's HP is now 8
+.........Fish 23's HP is now 10
+...Fish 23 is born at (12, 3).
+.........Fish 2's HP is now 2
+.........Fish 2's HP is now 4
+.........Fish 2's HP is now 6
+.........Fish 2's HP is now 8
+.........Fish 2's HP is now 10
+...Fish 2 is born at (35, 23).
+.........Fish 22's HP is now 2
+.........Fish 22's HP is now 4
+.........Fish 22's HP is now 6
+.........Fish 22's HP is now 8
+.........Fish 22's HP is now 10
+...Fish 22 is born at (33, 22).
+.........Fish 10's HP is now 2
+.........Fish 10's HP is now 4
+.........Fish 10's HP is now 6
+.........Fish 10's HP is now 8
+.........Fish 10's HP is now 10
+...Fish 10 is born at (10, 31).
+.........Fish 29's HP is now 2
+.........Fish 29's HP is now 4
+.........Fish 29's HP is now 6
+.........Fish 29's HP is now 8
+.........Fish 29's HP is now 10
+...Fish 29 is born at (38, 37).
+.........Fish 30's HP is now 2
+.........Fish 30's HP is now 4
+.........Fish 30's HP is now 6
+.........Fish 30's HP is now 8
+.........Fish 30's HP is now 10
+...Fish 30 is born at (8, 19).
+.........Fish 15's HP is now 2
+.........Fish 15's HP is now 4
+.........Fish 15's HP is now 6
+.........Fish 15's HP is now 8
+.........Fish 15's HP is now 10
+...Fish 15 is born at (17, 33).
+.........Fish 32's HP is now 2
+.........Fish 32's HP is now 4
+.........Fish 32's HP is now 6
+.........Fish 32's HP is now 8
+.........Fish 32's HP is now 10
+...Fish 32 is born at (5, 24).
+.........Fish 35's HP is now 2
+.........Fish 35's HP is now 4
+.........Fish 35's HP is now 6
+.........Fish 35's HP is now 8
+.........Fish 35's HP is now 10
+...Fish 35 is born at (20, 11).
+.........Fish 3's HP is now 2
+.........Fish 3's HP is now 4
+.........Fish 3's HP is now 6
+.........Fish 3's HP is now 8
+.........Fish 3's HP is now 10
+...Fish 3 is born at (11, 6).
+.........Fish 12's HP is now 2
+.........Fish 12's HP is now 4
+.........Fish 12's HP is now 6
+.........Fish 12's HP is now 8
+.........Fish 12's HP is now 10
+...Fish 12 is born at (4, 3).
+.........Fish 31's HP is now 2
+.........Fish 31's HP is now 4
+.........Fish 31's HP is now 6
+.........Fish 31's HP is now 8
+.........Fish 31's HP is now 10
+...Fish 31 is born at (35, 19).
+.........Fish 25's HP is now 2
+.........Fish 25's HP is now 4
+.........Fish 25's HP is now 6
+.........Fish 25's HP is now 8
+.........Fish 25's HP is now 10
+...Fish 25 is born at (35, 2).
+.........Fish 7's HP is now 2
+.........Fish 7's HP is now 4
+.........Fish 7's HP is now 6
+.........Fish 7's HP is now 8
+.........Fish 7's HP is now 10
+...Fish 7 is born at (17, 30).
+.........Fish 21's HP is now 2
+.........Fish 21's HP is now 4
+.........Fish 21's HP is now 6
+.........Fish 21's HP is now 8
+.........Fish 21's HP is now 10
+...Fish 21 is born at (6, 25).
+.........Fish 27's HP is now 2
+.........Fish 27's HP is now 4
+.........Fish 27's HP is now 6
+.........Fish 27's HP is now 8
+.........Fish 27's HP is now 10
+...Fish 27 is born at (27, 13).
+.........Fish 11's HP is now 2
+.........Fish 11's HP is now 4
+.........Fish 11's HP is now 6
+.........Fish 11's HP is now 8
+.........Fish 11's HP is now 10
+...Fish 11 is born at (8, 15).
+.........Fish 19's HP is now 2
+.........Fish 19's HP is now 4
+.........Fish 19's HP is now 6
+.........Fish 19's HP is now 8
+.........Fish 19's HP is now 10
+...Fish 19 is born at (29, 31).
+.........Fish 9's HP is now 2
+.........Fish 9's HP is now 4
+.........Fish 9's HP is now 6
+.........Fish 9's HP is now 8
+.........Fish 9's HP is now 10
+...Fish 9 is born at (21, 7).
+.........Fish 1's HP is now 2
+.........Fish 1's HP is now 4
+.........Fish 1's HP is now 6
+.........Fish 1's HP is now 8
+.........Fish 1's HP is now 10
+...Fish 1 is born at (24, 10).
+.........Fish 40's HP is now 2
+.........Fish 40's HP is now 4
+.........Fish 40's HP is now 6
+.........Fish 40's HP is now 8
+.........Fish 40's HP is now 10
+...Fish 40 is born at (40, 32).
+.........Fish 18's HP is now 2
+.........Fish 18's HP is now 4
+.........Fish 18's HP is now 6
+.........Fish 18's HP is now 8
+.........Fish 18's HP is now 10
+...Fish 18 is born at (30, 23).
+.........Fish 33's HP is now 2
+.........Fish 33's HP is now 4
+.........Fish 33's HP is now 6
+.........Fish 33's HP is now 8
+.........Fish 33's HP is now 10
+...Fish 33 is born at (5, 19).
+.........Fish 20's HP is now 2
+.........Fish 20's HP is now 4
+.........Fish 20's HP is now 6
+.........Fish 20's HP is now 8
+.........Fish 20's HP is now 10
+...Fish 20 is born at (7, 17).
+.........Fish 8's HP is now 2
+.........Fish 8's HP is now 4
+.........Fish 8's HP is now 6
+.........Fish 8's HP is now 8
+.........Fish 8's HP is now 10
+...Fish 8 is born at (32, 8).
+...Food is refreshed.
+...Round 0
+...Sequence is decided.
+......Fish 30 is now in action.
+.........Fish 30 attempts to move from (8, 19) to (4, 19). Success.
+.........Fish(att= 1) 30 attempts to attack fish 33 at (5, 19). Success.
+.........Fish 33's HP is now 9
+......Fish 15 is now in action.
+.........Fish 15 attempts to move from (17, 33) to (16, 30). Success.
+.........Fish(att= 1) 15 attempts to attack fish 7 at (17, 30). Success.
+.........Fish 7's HP is now 9
+......Fish 32 is now in action.
+.........Fish 32 attempts to move from (5, 24) to (4, 24). Success.
+......Fish 35 is now in action.
+.........Fish 35 attempts to move from (20, 11) to (19, 11). Success.
+......Fish 3 is now in action.
+.........Fish 3 attempts to move from (11, 6) to (10, 6). Success.
+......Fish 12 is now in action.
+.........Fish 12 attempts to move from (4, 3) to (3, 3). Success.
+......Fish 31 is now in action.
+.........Fish 31 attempts to move from (35, 19) to (33, 21). Success.
+.........Fish(att= 1) 31 attempts to attack fish 22 at (33, 22). Success.
+.........Fish 22's HP is now 9
+......Fish 25 is now in action.
+.........Fish 25 attempts to move from (35, 2) to (34, 2). Success.
+......Fish 7 is now in action.
+.........Fish 7 attempts to move from (17, 30) to (15, 30). Success.
+.........Fish(att= 1) 7 attempts to attack fish 15 at (16, 30). Success.
+.........Fish 15's HP is now 9
+......Fish 21 is now in action.
+.........Fish 21 attempts to move from (6, 25) to (3, 24). Success.
+.........Fish(att= 1) 21 attempts to attack fish 32 at (4, 24). Success.
+.........Fish 32's HP is now 9
+......Fish 27 is now in action.
+.........Fish 27 attempts to move from (27, 13) to (24, 13). Success.
+.........Fish(att= 1) 27 attempts to attack food at (23, 13). Success.
+......Fish 11 is now in action.
+.........Fish 11 attempts to move from (8, 15) to (4, 15). Success.
+.........Fish(att= 1) 11 attempts to attack food at (4, 14). Success.
+......Fish 19 is now in action.
+.........Fish 19 attempts to move from (29, 31) to (27, 30). Success.
+.........Fish(att= 1) 19 attempts to attack food at (27, 29). Success.
+......Fish 9 is now in action.
+.........Fish 9 attempts to move from (21, 7) to (18, 6). Success.
+.........Fish(att= 1) 9 attempts to attack food at (19, 6). Success.
+......Fish 1 is now in action.
+.........Fish 1 attempts to move from (24, 10) to (23, 10). Success.
+......Fish 40 is now in action.
+.........Fish 40 attempts to move from (40, 32) to (38, 34). Success.
+.........Fish(att= 1) 40 attempts to attack food at (38, 35). Success.
+......Fish 18 is now in action.
+.........Fish 18 attempts to move from (30, 23) to (29, 23). Success.
+......Fish 33 is now in action.
+.........Fish 33 attempts to move from (5, 19) to (1, 19). Success.
+.........Fish(att= 1) 33 attempts to attack food at (1, 18). Success.
+.........Fish 33's HP is now 10
+......Fish 20 is now in action.
+.........Fish 20 attempts to move from (7, 17) to (4, 16). Success.
+.........Fish(att= 1) 20 attempts to attack fish 11 at (4, 15). Success.
+.........Fish 11's HP is now 9
+......Fish 8 is now in action.
+.........Fish 8 attempts to move from (32, 8) to (29, 8). Success.
+.........Fish(att= 1) 8 attempts to attack fish 36 at (29, 7). Success.
+.........Fish 36's HP is now 9
+......Fish 5 is now in action.
+.........Fish 5 attempts to move from (4, 5) to (2, 3). Success.
+.........Fish(att= 1) 5 attempts to attack fish 12 at (3, 3). Success.
+.........Fish 12's HP is now 9
+......Fish 36 is now in action.
+.........Fish 36 attempts to move from (29, 7) to (25, 7). Success.
+.........Fish(att= 1) 36 attempts to attack food at (25, 6). Success.
+.........Fish 36's HP is now 10
+......Fish 4 is now in action.
+.........Fish 4 attempts to move from (17, 26) to (16, 26). Success.
+......Fish 16 is now in action.
+.........Fish 16 attempts to move from (4, 28) to (3, 25). Success.
+.........Fish(att= 1) 16 attempts to attack fish 21 at (3, 24). Success.
+.........Fish 21's HP is now 9
+......Fish 37 is now in action.
+.........Fish 37 attempts to move from (23, 29) to (21, 27). Success.
+.........Fish(att= 1) 37 attempts to attack fish 28 at (21, 26). Success.
+.........Fish 28's HP is now 9
+......Fish 28 is now in action.
+.........Fish 28 attempts to move from (21, 26) to (17, 26). Success.
+.........Fish(att= 1) 28 attempts to attack fish 4 at (16, 26). Success.
+.........Fish 4's HP is now 9
+......Fish 13 is now in action.
+.........Fish 13 attempts to move from (15, 13) to (12, 13). Success.
+.........Fish(att= 1) 13 attempts to attack food at (12, 14). Success.
+......Fish 17 is now in action.
+.........Fish 17 attempts to move from (24, 39) to (23, 39). Success.
+......Fish 26 is now in action.
+.........Fish 26 attempts to move from (35, 17) to (34, 17). Success.
+......Fish 14 is now in action.
+.........Fish 14 attempts to move from (12, 15) to (11, 13). Success.
+.........Fish(att= 1) 14 attempts to attack fish 13 at (12, 13). Success.
+.........Fish 13's HP is now 9
+......Fish 39 is now in action.
+.........Fish 39 attempts to move from (20, 6) to (16, 6). Success.
+.........Fish(att= 1) 39 attempts to attack food at (15, 6). Success.
+......Fish 24 is now in action.
+.........Fish 24 attempts to move from (33, 8) to (30, 8). Success.
+.........Fish(att= 1) 24 attempts to attack fish 8 at (29, 8). Success.
+.........Fish 8's HP is now 9
+......Fish 38 is now in action.
+.........Fish 38 attempts to move from (37, 37) to (36, 37). Success.
+......Fish 34 is now in action.
+.........Fish 34 attempts to move from (30, 12) to (29, 9). Success.
+.........Fish(att= 1) 34 attempts to attack fish 8 at (29, 8). Success.
+.........Fish 8's HP is now 8
+......Fish 6 is now in action.
+.........Fish 6 attempts to move from (30, 3) to (29, 3). Success.
+......Fish 23 is now in action.
+.........Fish 23 attempts to move from (12, 3) to (10, 5). Success.
+.........Fish(att= 1) 23 attempts to attack fish 3 at (10, 6). Success.
+.........Fish 3's HP is now 9
+......Fish 2 is now in action.
+.........Fish 2 attempts to move from (35, 23) to (32, 22). Success.
+.........Fish(att= 1) 2 attempts to attack fish 22 at (33, 22). Success.
+.........Fish 22's HP is now 8
+......Fish 22 is now in action.
+.........Fish 22 attempts to move from (33, 22) to (29, 22). Success.
+.........Fish(att= 1) 22 attempts to attack fish 18 at (29, 23). Success.
+.........Fish 18's HP is now 9
+......Fish 10 is now in action.
+.........Fish 10 attempts to move from (10, 31) to (6, 31). Success.
+.........Fish(att= 1) 10 attempts to attack food at (6, 32). Success.
+......Fish 29 is now in action.
+.........Fish 29 attempts to move from (38, 37) to (35, 37). Success.
+.........Fish(att= 1) 29 attempts to attack fish 38 at (36, 37). Success.
+.........Fish 38's HP is now 9
+...Round 1
+...Sequence is decided.
+......Fish 29 is now in action.
+.........Fish 29 attempts to move from (35, 37) to (31, 37). Success.
+.........Fish(att= 1) 29 attempts to attack food at (31, 38). Success.
+......Fish 2 is now in action.
+.........Fish 2 attempts to move from (32, 22) to (28, 22). Success.
+.........Fish(att= 1) 2 attempts to attack fish 22 at (29, 22). Success.
+.........Fish 22's HP is now 7
+......Fish 23 is now in action.
+.........Fish 23 attempts to move from (10, 5) to (9, 5). Success.
+......Fish 6 is now in action.
+.........Fish 6 attempts to move from (29, 3) to (28, 3). Success.
+......Fish 34 is now in action.
+.........Fish 34 attempts to move from (29, 9) to (28, 8). Success.
+.........Fish(att= 1) 34 attempts to attack fish 8 at (29, 8). Success.
+.........Fish 8's HP is now 7
+......Fish 24 is now in action.
+.........Fish 24 attempts to move from (30, 8) to (27, 8). Success.
+.........Fish(att= 1) 24 attempts to attack fish 34 at (28, 8). Success.
+.........Fish 34's HP is now 9
+......Fish 14 is now in action.
+.........Fish 14 attempts to move from (11, 13) to (7, 13). Success.
+.........Fish(att= 1) 14 attempts to attack food at (8, 13). Success.
+......Fish 26 is now in action.
+.........Fish 26 attempts to move from (34, 17) to (33, 17). Success.
+......Fish 17 is now in action.
+.........Fish 17 attempts to move from (23, 39) to (22, 39). Success.
+......Fish 37 is now in action.
+.........Fish 37 attempts to move from (21, 27) to (17, 27). Success.
+.........Fish(att= 1) 37 attempts to attack fish 28 at (17, 26). Success.
+.........Fish 28's HP is now 8
+......Fish 16 is now in action.
+.........Fish 16 attempts to move from (3, 25) to (2, 24). Success.
+.........Fish(att= 1) 16 attempts to attack fish 21 at (3, 24). Success.
+.........Fish 21's HP is now 8
+......Fish 5 is now in action.
+.........Fish 5 attempts to move from (2, 3) to (1, 3). Success.
+......Fish 20 is now in action.
+.........Fish 20 attempts to move from (4, 16) to (3, 15). Success.
+.........Fish(att= 1) 20 attempts to attack fish 11 at (4, 15). Success.
+.........Fish 11's HP is now 8
+......Fish 1 is now in action.
+.........Fish 1 attempts to move from (23, 10) to (19, 10). Success.
+.........Fish(att= 1) 1 attempts to attack fish 35 at (19, 11). Success.
+.........Fish 35's HP is now 9
+......Fish 30 is now in action.
+.........Fish 30 attempts to move from (4, 19) to (1, 18). Success.
+.........Fish(att= 1) 30 attempts to attack fish 33 at (1, 19). Success.
+.........Fish 33's HP is now 9
+......Fish 35 is now in action.
+.........Fish 35 attempts to move from (19, 11) to (18, 10). Success.
+.........Fish(att= 1) 35 attempts to attack fish 1 at (19, 10). Success.
+.........Fish 1's HP is now 9
+......Fish 31 is now in action.
+.........Fish 31 attempts to move from (33, 21) to (29, 21). Success.
+.........Fish(att= 1) 31 attempts to attack fish 22 at (29, 22). Success.
+.........Fish 22's HP is now 6
+......Fish 25 is now in action.
+.........Fish 25 attempts to move from (34, 2) to (33, 2). Success.
+......Fish 10 is now in action.
+.........Fish 10 attempts to move from (6, 31) to (5, 31). Success.
+......Fish 39 is now in action.
+.........Fish 39 attempts to move from (16, 6) to (14, 4). Success.
+.........Fish(att= 1) 39 attempts to attack food at (15, 4). Success.
+.........Fish 39 is upgraded to Lv. 2
+......Fish 27 is now in action.
+.........Fish 27 attempts to move from (24, 13) to (23, 13). Success.
+......Fish 9 is now in action.
+.........Fish 9 attempts to move from (18, 6) to (17, 3). Success.
+.........Fish(att= 1) 9 attempts to attack food at (18, 3). Success.
+.........Fish 9 is upgraded to Lv. 2
+......Fish 40 is now in action.
+.........Fish 40 attempts to move from (38, 34) to (36, 36). Success.
+.........Fish(att= 1) 40 attempts to attack fish 38 at (36, 37). Success.
+.........Fish 38's HP is now 8
+......Fish 33 is now in action.
+.........Fish 33 attempts to move from (1, 19) to (1, 17). Success.
+.........Fish(att= 1) 33 attempts to attack fish 30 at (1, 18). Success.
+.........Fish 30's HP is now 9
+......Fish 19 is now in action.
+.........Fish 19 attempts to move from (27, 30) to (26, 30). Success.
+......Fish 36 is now in action.
+.........Fish 36 attempts to move from (25, 7) to (22, 7). Success.
+.........Fish(att= 1) 36 attempts to attack food at (22, 6). Success.
+.........Fish 36 is upgraded to Lv. 2
+......Fish 28 is now in action.
+.........Fish 28 attempts to move from (17, 26) to (15, 26). Success.
+.........Fish(att= 1) 28 attempts to attack fish 4 at (16, 26). Success.
+.........Fish 4's HP is now 8
+......Fish 7 is now in action.
+.........Fish 7 attempts to move from (15, 30) to (14, 30). Success.
+......Fish 21 is now in action.
+.........Fish 21 attempts to move from (3, 24) to (1, 24). Success.
+.........Fish(att= 1) 21 attempts to attack fish 16 at (2, 24). Success.
+.........Fish 16's HP is now 9
+......Fish 12 is now in action.
+.........Fish 12 attempts to move from (3, 3) to (1, 2). Success.
+.........Fish(att= 1) 12 attempts to attack fish 5 at (1, 3). Success.
+.........Fish 5's HP is now 9
+......Fish 38 is now in action.
+.........Fish 38 attempts to move from (36, 37) to (32, 37). Success.
+.........Fish(att= 1) 38 attempts to attack fish 29 at (31, 37). Success.
+.........Fish 29's HP is now 9
+......Fish 3 is now in action.
+.........Fish 3 attempts to move from (10, 6) to (8, 5). Success.
+.........Fish(att= 1) 3 attempts to attack fish 23 at (9, 5). Success.
+.........Fish 23's HP is now 9
+......Fish 18 is now in action.
+.........Fish 18 attempts to move from (29, 23) to (26, 22). Success.
+.........Fish(att= 1) 18 attempts to attack food at (26, 21). Success.
+.........Fish 18's HP is now 10
+......Fish 32 is now in action.
+.........Fish 32 attempts to move from (4, 24) to (1, 23). Success.
+.........Fish(att= 1) 32 attempts to attack fish 21 at (1, 24). Success.
+.........Fish 21's HP is now 7
+......Fish 15 is now in action.
+.........Fish 15 attempts to move from (16, 30) to (13, 30). Success.
+.........Fish(att= 1) 15 attempts to attack fish 7 at (14, 30). Success.
+.........Fish 7's HP is now 8
+......Fish 4 is now in action.
+.........Fish 4 attempts to move from (16, 26) to (14, 26). Success.
+.........Fish(att= 1) 4 attempts to attack fish 28 at (15, 26). Success.
+.........Fish 28's HP is now 7
+......Fish 13 is now in action.
+.........Fish 13 attempts to move from (12, 13) to (8, 13). Success.
+.........Fish(att= 1) 13 attempts to attack fish 14 at (7, 13). Success.
+.........Fish 14's HP is now 9
+......Fish 11 is now in action.
+.........Fish 11 attempts to move from (4, 15) to (1, 16). Success.
+.........Fish(att= 1) 11 attempts to attack fish 33 at (1, 17). Success.
+.........Fish 33's HP is now 8
+......Fish 8 is now in action.
+.........Fish 8 attempts to move from (29, 8) to (26, 8). Success.
+.........Fish(att= 1) 8 attempts to attack fish 24 at (27, 8). Success.
+.........Fish 24's HP is now 9
+......Fish 22 is now in action.
+.........Fish 22 attempts to move from (29, 22) to (25, 22). Success.
+.........Fish(att= 1) 22 attempts to attack fish 18 at (26, 22). Success.
+.........Fish 18's HP is now 9
+...Round 2
+...Sequence is decided.
+......Fish 25 is now in action.
+.........Fish 25 attempts to move from (33, 2) to (32, 2). Success.
+......Fish 31 is now in action.
+.........Fish 31 attempts to move from (29, 21) to (25, 21). Success.
+.........Fish(att= 1) 31 attempts to attack fish 22 at (25, 22). Success.
+.........Fish 22's HP is now 5
+......Fish 20 is now in action.
+.........Fish 20 attempts to move from (3, 15) to (1, 13). Success.
+.........Fish(att= 1) 20 attempts to attack food at (1, 12). Success.
+......Fish 37 is now in action.
+.........Fish 37 attempts to move from (17, 27) to (14, 27). Success.
+.........Fish(att= 1) 37 attempts to attack fish 4 at (14, 26). Success.
+.........Fish 4's HP is now 7
+......Fish 17 is now in action.
+.........Fish 17 attempts to move from (22, 39) to (21, 39). Success.
+......Fish 26 is now in action.
+.........Fish 26 attempts to move from (33, 17) to (32, 17). Success.
+......Fish 6 is now in action.
+.........Fish 6 attempts to move from (28, 3) to (27, 3). Success.
+......Fish 2 is now in action.
+.........Fish 2 attempts to move from (28, 22) to (24, 22). Success.
+.........Fish(att= 1) 2 attempts to attack food at (23, 22). Success.
+......Fish 19 is now in action.
+.........Fish 19 attempts to move from (26, 30) to (25, 30). Success.
+......Fish 40 is now in action.
+.........Fish 40 attempts to move from (36, 36) to (32, 36). Success.
+.........Fish(att= 1) 40 attempts to attack fish 38 at (32, 37). Success.
+.........Fish 38's HP is now 7
+......Fish 27 is now in action.
+.........Fish 27 attempts to move from (23, 13) to (22, 13). Success.
+......Fish 10 is now in action.
+.........Fish 10 attempts to move from (5, 31) to (4, 31). Success.
+......Fish 36 is now in action.
+.........Fish 36's HP is now 12
+.........Fish 36's HP is now 14
+.........Fish 36 attempts to move from (22, 7) to (19, 9). Success.
+.........Fish(att= 1) 36 attempts to attack fish 1 at (19, 10). Success.
+.........Fish 1's HP is now 8
+......Fish 9 is now in action.
+.........Fish 9's HP is now 12
+.........Fish 9's HP is now 14
+.........Fish 9 attempts to move from (17, 3) to (12, 3). Success.
+.........Fish(att= 1) 9 attempts to attack food at (12, 2). Success.
+......Fish 39 is now in action.
+.........Fish 39's HP is now 12
+.........Fish 39's HP is now 14
+.........Fish 39 attempts to move from (14, 4) to (9, 4). Success.
+.........Fish(att= 1) 39 attempts to attack fish 23 at (9, 5). Success.
+.........Fish 23's HP is now 8
+......Fish 32 is now in action.
+.........Fish 32 attempts to move from (1, 23) to (1, 19). Success.
+.........Fish(att= 1) 32 attempts to attack fish 30 at (1, 18). Success.
+.........Fish 30's HP is now 8
+......Fish 3 is now in action.
+.........Fish 3 attempts to move from (8, 5) to (7, 2). Success.
+.........Fish(att= 1) 3 attempts to attack food at (7, 1). Success.
+.........Fish 3's HP is now 10
+......Fish 12 is now in action.
+.........Fish 12 attempts to move from (1, 2) to (1, 1). Success.
+......Fish 35 is now in action.
+.........Fish 35 attempts to move from (18, 10) to (17, 10). Success.
+......Fish 30 is now in action.
+.........Fish 30 attempts to move from (1, 18) to (1, 14). Success.
+.........Fish(att= 1) 30 attempts to attack fish 20 at (1, 13). Success.
+.........Fish 20's HP is now 9
+......Fish 1 is now in action.
+.........Fish 1 attempts to move from (19, 10) to (16, 10). Success.
+.........Fish(att= 1) 1 attempts to attack fish 35 at (17, 10). Success.
+.........Fish 35's HP is now 8
+......Fish 5 is now in action.
+.........Fish 5 attempts to move from (1, 3) to (1, 2). Success.
+.........Fish(att= 1) 5 attempts to attack fish 12 at (1, 1). Success.
+.........Fish 12's HP is now 8
+......Fish 16 is now in action.
+.........Fish 16 attempts to move from (2, 24) to (1, 23). Success.
+.........Fish(att= 1) 16 attempts to attack fish 21 at (1, 24). Success.
+.........Fish 21's HP is now 6
+......Fish 15 is now in action.
+.........Fish 15 attempts to move from (13, 30) to (12, 30). Success.
+......Fish 24 is now in action.
+.........Fish 24 attempts to move from (27, 8) to (25, 8). Success.
+.........Fish(att= 1) 24 attempts to attack fish 8 at (26, 8). Success.
+.........Fish 8's HP is now 6
+......Fish 34 is now in action.
+.........Fish 34 attempts to move from (28, 8) to (24, 8). Success.
+.........Fish(att= 1) 34 attempts to attack fish 24 at (25, 8). Success.
+.........Fish 24's HP is now 8
+......Fish 23 is now in action.
+.........Fish 23 attempts to move from (9, 5) to (7, 3). Success.
+.........Fish(att= 1) 23 attempts to attack fish 3 at (7, 2). Success.
+.........Fish 3's HP is now 9
+......Fish 18 is now in action.
+.........Fish 18 attempts to move from (26, 22) to (23, 22). Success.
+.........Fish(att= 1) 18 attempts to attack fish 2 at (24, 22). Success.
+.........Fish 2's HP is now 9
+......Fish 13 is now in action.
+.........Fish 13 attempts to move from (8, 13) to (5, 14). Success.
+.........Fish(att= 1) 13 attempts to attack food at (5, 15). Success.
+.........Fish 13's HP is now 10
+.........Fish 13 is upgraded to Lv. 2
+......Fish 14 is now in action.
+.........Fish 14 attempts to move from (7, 13) to (4, 14). Success.
+.........Fish(att= 1) 14 attempts to attack fish 13 at (5, 14). Success.
+.........Fish 13's HP is now 9
+......Fish 29 is now in action.
+.........Fish 29 attempts to move from (31, 37) to (30, 37). Success.
+......Fish 38 is now in action.
+.........Fish 38 attempts to move from (32, 37) to (29, 37). Success.
+.........Fish(att= 1) 38 attempts to attack fish 29 at (30, 37). Success.
+.........Fish 29's HP is now 8
+......Fish 7 is now in action.
+.........Fish 7 attempts to move from (14, 30) to (11, 30). Success.
+.........Fish(att= 1) 7 attempts to attack fish 15 at (12, 30). Success.
+.........Fish 15's HP is now 8
+......Fish 4 is now in action.
+.........Fish 4 attempts to move from (14, 26) to (13, 26). Success.
+......Fish 33 is now in action.
+.........Fish 33 attempts to move from (1, 17) to (1, 15). Success.
+.........Fish(att= 1) 33 attempts to attack fish 30 at (1, 14). Success.
+.........Fish 30's HP is now 7
+......Fish 11 is now in action.
+.........Fish 11 attempts to move from (1, 16) to (1, 12). Success.
+.........Fish(att= 1) 11 attempts to attack fish 20 at (1, 13). Success.
+.........Fish 20's HP is now 8
+......Fish 21 is now in action.
+.........Fish 21 attempts to move from (1, 24) to (1, 20). Success.
+.........Fish(att= 1) 21 attempts to attack fish 32 at (1, 19). Success.
+.........Fish 32's HP is now 8
+......Fish 28 is now in action.
+.........Fish 28 attempts to move from (15, 26) to (12, 26). Success.
+.........Fish(att= 1) 28 attempts to attack fish 4 at (13, 26). Success.
+.........Fish 4's HP is now 6
+......Fish 8 is now in action.
+.........Fish 8 attempts to move from (26, 8) to (23, 8). Success.
+.........Fish(att= 1) 8 attempts to attack fish 34 at (24, 8). Success.
+.........Fish 34's HP is now 8
+......Fish 22 is now in action.
+.........Fish 22 attempts to move from (25, 22) to (21, 22). Success.
+.........Fish(att= 1) 22 attempts to attack food at (20, 22). Success.
+.........Fish 22's HP is now 7
+...Round 3
+...Sequence is decided.
+[2012/11/6 16:58:8] Game is ended.
+Result:
+Id     Author Points Bonus  Exp    Level  Kill   Dead   Attack Speed  HP     MaxHP  
+9      TAAI   3      0      3      2      0      0      1      5      14     14     
+13     TAAI   2      0      2      2      0      0      1      4      9      10     
+39     TAAI   2      0      2      2      0      0      1      5      14     14     
+36     TAAI   2      0      2      2      0      0      1      5      14     14     
+2      TAAI   1      0      1      1      0      0      1      4      9      10     
+14     TAAI   1      0      1      1      0      0      1      4      9      10     
+3      TAAI   1      0      1      1      0      0      1      4      9      10     
+18     TAAI   1      0      1      1      0      0      1      4      9      10     
+11     TAAI   1      0      1      1      0      0      1      4      8      10     
+33     TAAI   1      0      1      1      0      0      1      4      8      10     
+10     TAAI   1      0      1      1      0      0      1      4      10     10     
+27     TAAI   1      0      1      1      0      0      1      4      10     10     
+40     TAAI   1      0      1      1      0      0      1      4      10     10     
+19     TAAI   1      0      1      1      0      0      1      4      10     10     
+20     TAAI   1      0      1      1      0      0      1      4      8      10     
+29     TAAI   1      0      1      1      0      0      1      4      8      10     
+22     TAAI   1      0      1      1      0      0      1      4      7      10     
+32     TAAI   0      0      0      1      0      0      1      4      8      10     
+12     TAAI   0      0      0      1      0      0      1      4      8      10     
+35     TAAI   0      0      0      1      0      0      1      4      8      10     
+30     TAAI   0      0      0      1      0      0      1      4      7      10     
+38     TAAI   0      0      0      1      0      0      1      4      7      10     
+28     TAAI   0      0      0      1      0      0      1      4      7      10     
+4      TAAI   0      0      0      1      0      0      1      4      6      10     
+21     TAAI   0      0      0      1      0      0      1      4      6      10     
+8      TAAI   0      0      0      1      0      0      1      4      6      10     
+1      TAAI   0      0      0      1      0      0      1      4      8      10     
+15     TAAI   0      0      0      1      0      0      1      4      8      10     
+24     TAAI   0      0      0      1      0      0      1      4      8      10     
+7      TAAI   0      0      0      1      0      0      1      4      8      10     
+34     TAAI   0      0      0      1      0      0      1      4      8      10     
+23     TAAI   0      0      0      1      0      0      1      4      8      10     
+5      TAAI   0      0      0      1      0      0      1      4      9      10     
+16     TAAI   0      0      0      1      0      0      1      4      9      10     
+17     TAAI   0      0      0      1      0      0      1      4      10     10     
+37     TAAI   0      0      0      1      0      0      1      4      10     10     
+31     TAAI   0      0      0      1      0      0      1      4      10     10     
+25     TAAI   0      0      0      1      0      0      1      4      10     10     
+26     TAAI   0      0      0      1      0      0      1      4      10     10     
+6      TAAI   0      0      0      1      0      0      1      4      10     10     
+[2012/11/6 16:58:9] Host is destroyed.

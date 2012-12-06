@@ -1,13 +1,13 @@
 #include "eventlogger.h"
 #include "host.h"
 
-const char* pstrResultString[7] = {"Success.",     //0
-                            "Failure: invalid target coordinate.",      //1
-                            "Failure: target is already occupied.",     //2
-                            "Failure: target is out of range.",     //3
-                            "Failure: target is empty.",        //4
-                            "Failure: operation is allowed once each round." ,   //5
-                            "Failure: it's not good to commit suicide."     //6
+const wxString strResultString[7] = {wxT("Success."),     //0
+                            wxT("Failure: invalid target coordinate."),      //1
+                            wxT("Failure: target is already occupied."),     //2
+                            wxT("Failure: target is out of range."),     //3
+                            wxT("Failure: target is empty."),        //4
+                            wxT("Failure: operation is allowed once each round.") ,   //5
+                            wxT("Failure: it's not good to commit suicide.")     //6
                            };
 
 EventLogger::EventLogger(const std::string& strId):strIdentifier(strId), host(RetrieveHost()){}
@@ -104,9 +104,9 @@ void EventLoggerHub::FishAttack(int iId, int iTargetPosX, int iTargetPosY, int i
        elList[i]->FishAttack(iId, iTargetPosX, iTargetPosY, iTarget, iResult);
 }
 
-void EventLoggerHub::FishDead(int iId){
+void EventLoggerHub::FishDead(int iId, int iPosX, int iPosY){
    for (unsigned i=0; i<elList.size(); ++i)
-       elList[i]->FishDead(iId);
+       elList[i]->FishDead(iId, iPosX, iPosY);
 }
 
 void EventLoggerHub::FishExpIncreased(int iId){

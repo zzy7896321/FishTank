@@ -1,11 +1,15 @@
+#include "fishtankapp.h"
 #include "host.h"
 
-int main(){
-
-    Host& host = RetrieveHost();
-    host.FirstSetup();
-
-    if (!host.Start()) return -1;
-
-    return 0;
+bool FishTankApp::OnInit(){
+    mainFrame = new MainFrame();
+    mainFrame->Show();
+    RetrieveHost().FirstSetup();
+    return true;
 }
+
+MainFrame* FishTankApp::GetMainFrame(){
+    return mainFrame;
+}
+
+IMPLEMENT_APP(FishTankApp)

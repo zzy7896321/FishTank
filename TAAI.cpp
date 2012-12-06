@@ -10,7 +10,7 @@ void TAAI::init(){
 }
 
 void TAAI::play(){
-	while(getPoint()){
+    while(getPoint()){
 		if(getPoint())increaseHealth();
 		if(getPoint())increaseSpeed();
 	}
@@ -37,6 +37,7 @@ void TAAI::play(){
 				return;
 			}
 		}
+
 }
 
 void TAAI::revive(int& x,int& y){}

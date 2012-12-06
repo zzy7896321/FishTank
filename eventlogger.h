@@ -4,8 +4,9 @@
 #include <ctime>
 #include <vector>
 #include <string>
+#include "wx_commonheader.h"
 
-extern const char* pstrResultString[7]/* = {"Success.",     //0
+extern const wxString strResultString[7]/* = {"Success.",     //0
                             "Failure: invalid target coordinate.",      //1
                             "Failure: target is already occupied.",     //2
                             "Failure: target is out of range.",     //3
@@ -36,7 +37,7 @@ public:
     virtual void FishInAction(int iId) = 0;
     virtual void FishMove(int iId, int iFormerPosX, int iFormerPosY, int iTargetPosX, int iTargetPosY, int iResult) = 0;
     virtual void FishAttack(int iId, int iTargetPosX, int iTargetPosY, int iTarget, int iResult) = 0;
-    virtual void FishDead(int iId) = 0;
+    virtual void FishDead(int iId, int iPosX, int iPosY) = 0;
     virtual void FishExpIncreased(int iId) = 0;
     virtual void FishLevelUp(int iId) = 0;
     virtual void FishHPModified(int iId) = 0;
@@ -75,7 +76,7 @@ public:
     void FishInAction(int iId);
     void FishMove(int iId, int iFormerPosX, int iFormerPosY, int iTargetPosX, int iTargetPosY, int iResult);
     void FishAttack(int iId, int iTargetPosX, int iTargetPosY, int iTarget, int iResult);
-    void FishDead(int iId);
+    void FishDead(int iId, int iPosX, int iPosY);
     void FishExpIncreased(int iId);
     void FishLevelUp(int iId);
     void FishHPModified(int iId);

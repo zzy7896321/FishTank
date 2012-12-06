@@ -4,6 +4,7 @@
 #include "constants.h"
 #include "eventlogger.h"
 #include <string>
+#include "wx_commonheader.h"
 
 class fish;
 
@@ -16,7 +17,7 @@ struct FishData_t{
         int iPosX, iPosY;
         int iKillBonus;      // = 2 * sigma(max{0,level(victim)-level(killer))
         int iKillCount, iDeadCount;
-        std::string strIdentifier;
+        wxString strIdentifier;
         enum {START, AFTER_MOVE, AFTER_ATTACK, END} iPhase;
         enum {ALIVE = 0, DEAD = 1} iStatus;
         int iRoundSinceDead;
@@ -53,15 +54,16 @@ public:
     int getKillCount(int id) const;
     int getDeadCount(int id) const;
     int getKillBonus(int id) const;
-    std::string getIdentifier(int id) const;
+    wxString getIdentifier(int id) const;
+    int getPlayerCount() const;  //retrieve the number of players
 
     bool move(int id, int x, int y);    //move id to (x,y)
     bool attack(int id, int x, int y);  //id commence an attack on (x,y)
     bool increaseHealth(int id, int delta = 1); //increase id's Health by delta
     bool increaseStrength(int id, int delta = 1); //increase id's Strength by delta
     bool increaseSpeed(int id, int delta = 1); //increase id's Speed by delta
-
-    int getPlayerCount() const;  //retrieve the number of players
+    void setIdentifier(const wxString& str);    //set the identifier of the last added fish
+    void setIdentifier(int id, const wxString& str);    //set id's indentifier
 
 private:
 
@@ -93,7 +95,17 @@ private:
     //Food related functions
     void RefreshFood();     //refresh food, need to be invoked every FOOD_ROUND rounds
 
+    void InitializeFish(int i);     //Get fdpFishTable[i] born and invoke its init()
+    bool ReviveFish(int id);
+    void DecideActionSequence();
+    void ActivateFish(int id);
+    void EndGame();
+    bool Pause(int pauseType);   //true indicates force stop
+
     EventLoggerHub elhLog;
+
+    wxMutex& mutex;
+    wxCondition& condition;
 };
 
 inline Host& RetrieveHost(){

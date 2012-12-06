@@ -1,15 +1,14 @@
-#ifndef _FILELOGGER_H_
-#define _FILELOGGER_H_
+#ifndef _GUILOGGER_H_
+#define _GUILOGGER_H_
 
 #include "eventlogger.h"
-#include <fstream>
-#include <string>
+#include "wx_commonheader.h"
+#include "MainFrame.h"
 
-class FileLogger:public EventLogger{
+class GuiLogger:public EventLogger{
 public:
-    FileLogger(const char* pstrFileLocation);
-    FileLogger(const std::string& strFileLocation);
-    ~FileLogger();
+    GuiLogger();
+    ~GuiLogger();
 
     void HostInitialized(time_t tmTime);
     void AISetup(time_t tmTime, int iCount);
@@ -37,7 +36,7 @@ public:
     void FishSpeedIncreased(int iId);
     void FishStrengthIncreased(int iId);
 private:
-    std::ofstream Out;
+    MainFrame* mainFrame;
 };
 
-#endif // _FILELOGGER_H_
+#endif // _GUILOGGER_H_

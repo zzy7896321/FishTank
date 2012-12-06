@@ -5,8 +5,9 @@
 #include <cmath>
 #include <utility>
 #include "filelogger.h"
-#include "stdoutlogger.h"
+#include "guilogger.h"
 #include <algorithm>
+#include "syncobj.h"
 
 #ifdef _DEBUG_VER_
     #include <iostream>
@@ -62,7 +63,7 @@ static inline bool PointPriority(FishData_t* l, FishData_t* r){
 }
 
 Host::Host():iPlayerCount(0), iDeathCount(0), iHostStatus(BEFOREFIRSTSETUP),
-             elhLog(){
+             elhLog(), mutex(RetrieveHostDataMutex()), condition(RetrieveResumeCondition()){
     srand(static_cast<unsigned>(time(0)));
 }
 
@@ -72,9 +73,7 @@ Host::~Host(){
 
 void Host::SetLogger(){
     elhLog.AddLogger(new FileLogger("result.txt"));
-    #ifdef _ENABLE_STDOUTLOGGER_
-        elhLog.AddLogger(new StdoutLogger);
-    #endif
+    elhLog.AddLogger(new GuiLogger());
 }
 
 void Host::FirstSetup(){
@@ -96,6 +95,7 @@ void Host::Reset(){
 
 void Host::Destroy(){
     if (iHostStatus == END){
+        wxMutexLocker lock(mutex);
         for (int i = 0; i!=MAX_PLAYER; ++i)
             delete fdpFishTable[i];
         iHostStatus = DESTROYED;
@@ -107,6 +107,7 @@ void Host::Destroy(){
 
 void Host::Initialize(){
     if (iHostStatus == DESTROYED){
+        wxMutexLocker lock(mutex);
         iPlayerCount = 0;
         for (int i = 0; i!=iIdPoolSize; ++i){
             ipIdPool[i] = i+1;
@@ -138,6 +139,7 @@ FishData_t::~FishData_t(){
 }
 
 int Host::AllocateID(fish* fIns){
+    wxMutexLocker lock(mutex);
     if (iPlayerCount == MAX_PLAYER) return INVALID_VALUE; //number of player exceed the limit
     //Allocate ID
     {
@@ -219,8 +221,18 @@ int Host::getPlayerCount() const{
     return iPlayerCount;
 }
 
-std::string Host::getIdentifier(int id) const{
-    return (IfIdValid(id)) ? (fdpIdTable[id]->strIdentifier) : "INV";
+wxString Host::getIdentifier(int id) const{
+    return (IfIdValid(id)) ? (fdpIdTable[id]->strIdentifier) : wxT("INV");
+}
+
+void Host::setIdentifier(const wxString& str){
+    if (iPlayerCount>0){
+        fdpFishTable[iPlayerCount-1]->strIdentifier = str;
+    }
+}
+
+void Host::setIdentifier(int id, const wxString& str){
+    if (IfIdValid(id)) fdpIdTable[id]->strIdentifier = str;
 }
 
 bool Host::move(int id, int x, int y){
@@ -244,6 +256,7 @@ bool Host::move(int id, int x, int y){
         return false;
     }
 
+    mutex.Lock();
     int iFormerX = getX(id), iFormerY = getY(id);
     if (IfCoordValid(iFormerX, iFormerY))
         ipMapContent[iFormerX][iFormerY] = EMPTY;   //empty the original grid
@@ -251,6 +264,7 @@ bool Host::move(int id, int x, int y){
     fdpIdTable[id]->iPosX = x;  //update coord in FishData
     fdpIdTable[id]->iPosY = y;
     fdpIdTable[id]->iPhase = FishData_t::AFTER_MOVE;
+    mutex.Unlock();
     elhLog.FishMove(id, iFormerX, iFormerY, x, y, 0);
     return true;
 
@@ -258,6 +272,7 @@ bool Host::move(int id, int x, int y){
 
 int Host::IncreaseHP(int id, int delta){
     if (delta<=0) return 0; //invalid delta
+
     delta = min(delta, fdpIdTable[id]->iMaxHP - fdpIdTable[id]->iHP);
     fdpIdTable[id]->iHP += delta;
     if (delta) elhLog.FishHPModified(id);
@@ -266,28 +281,31 @@ int Host::IncreaseHP(int id, int delta){
 
 bool Host::DecreaseHP(int id, int delta){
     if (delta<=0) return false; //invalid delta
+
     fdpIdTable[id]->iHP -= delta;
     if (fdpIdTable[id]->iHP > 0) {
         if (delta) elhLog.FishHPModified(id);
         return false;
     }
     else{
+        int iTempX = getX(id), iTempY = getY(id);
         fdpIdTable[id]->iHP = 0;
         fdpIdTable[id]->iStatus = FishData_t::DEAD;
         fdpIdTable[id]->iPhase = FishData_t::END;
         fdpIdTable[id]->iRoundSinceDead = 0;
-        ipMapContent[getX(id)][getY(id)] = EMPTY;
+        ipMapContent[iTempX][iTempY] = EMPTY;
         fdpIdTable[id]->iPosX = INVALID_VALUE;
         fdpIdTable[id]->iPosY = INVALID_VALUE;
         ++fdpIdTable[id]->iDeadCount;
         fdpDeathTable[iDeathCount++] = fdpIdTable[id];
-        elhLog.FishDead(id);
+        elhLog.FishDead(id, iTempX, iTempY);
         return true;
     }
 }
 
 int Host::IncreaseExp(int id, int delta){
     if (delta<=0) return 0; //invalide delta
+
     fdpIdTable[id]->iExp += delta;
     elhLog.FishExpIncreased(id);
     int newLevel = trunc((sqrt(9 + 8 * fdpIdTable[id]->iExp) - 1) / 2);
@@ -301,26 +319,19 @@ int Host::IncreaseExp(int id, int delta){
 }
 
 void Host::RefreshFood(){
+    static int ipPosX[MAX_FOOD], ipPosY[MAX_FOOD];
+    wxMutexLocker lock(mutex);
     for (int i=0; i<N; ++i)
     for (int j=0; j<M; ++j)
         if (ipMapContent[i][j] == FOOD) ipMapContent[i][j] = EMPTY;
 
-    #ifdef _DEBUG_VER_
-        int ipPosX[MAX_FOOD], ipPosY[MAX_FOOD];
-    #endif
     for (int i=0; i<MAX_FOOD; ++i){
         std::pair<int, int> coord = GetRandomCoord();
         ipMapContent[coord.first][coord.second] = FOOD;
-        #ifdef _DEBUG_VER_
-            ipPosX[i] = coord.first;
-            ipPosY[i] = coord.second;
-        #endif
+        ipPosX[i] = coord.first;
+        ipPosY[i] = coord.second;
     }
-    #ifdef _DEBUG_VER_
-        elhLog.FoodRefreshed(ipPosX, ipPosY);
-    #else
-        elhLog.FoodRefreshed(0, 0);
-    #endif
+    elhLog.FoodRefreshed(ipPosX, ipPosY);
 }
 
 bool Host::attack(int id, int x, int y){
@@ -348,10 +359,11 @@ bool Host::attack(int id, int x, int y){
         return false;
     }  //target is not in range
 
+    wxMutexLocker lock(mutex);
     fdpIdTable[id]->iPhase = FishData_t::AFTER_ATTACK;
     if (getMapContent(x, y) == FOOD){
-        elhLog.FishAttack(id, x, y, getMapContent(x, y), 0);
         ipMapContent[x][y] = EMPTY;
+        elhLog.FishAttack(id, x, y, FOOD, 0);
         IncreaseHP(id, max(2, getMaxHP(id) / 10));
         IncreaseExp(id, 1);
         return true;
@@ -373,6 +385,8 @@ bool Host::increaseHealth(int id, int delta){
       || (fdpIdTable[id]->iStatus == FishData_t::DEAD)  //dead fish cannot increase propery points
       || (fdpIdTable[id]->iPropertyPoint < delta)   //no sufficient property point
     ) return false;
+
+    wxMutexLocker lock(mutex);
     fdpIdTable[id]->iMaxHP += (delta << 1);
     elhLog.FishHealthIncreased(id);
     fdpIdTable[id]->iHP += (delta << 1);
@@ -387,6 +401,8 @@ bool Host::increaseStrength(int id, int delta){
       || (fdpIdTable[id]->iStatus == FishData_t::DEAD)  //dead fish cannot increase propery points
       || (fdpIdTable[id]->iPropertyPoint < delta)   //no sufficient property point
     ) return false;
+
+    wxMutexLocker lock(mutex);
     fdpIdTable[id]->iStrength += delta;
     elhLog.FishStrengthIncreased(id);
     fdpIdTable[id]->iPropertyPoint-=delta;
@@ -399,10 +415,90 @@ bool Host::increaseSpeed(int id, int delta){
       || (fdpIdTable[id]->iStatus == FishData_t::DEAD)  //dead fish cannot increase propery points
       || (fdpIdTable[id]->iPropertyPoint < delta)   //no sufficient property point
     ) return false;
+
+    wxMutexLocker lock(mutex);
     fdpIdTable[id]->iSpeed += delta;
     elhLog.FishSpeedIncreased(id);
     fdpIdTable[id]->iPropertyPoint-=delta;
     return true;
+}
+
+void Host::InitializeFish(int i){
+    {
+        wxMutexLocker lock(mutex);
+        std::pair<int, int> coord = GetRandomCoord();
+        fdpFishTable[i]->iPosX = coord.first;
+        fdpFishTable[i]->iPosY = coord.second;
+        ipMapContent[coord.first][coord.second] = fdpFishTable[i]->iId;
+        fdpFishTable[i]->iStatus = FishData_t::ALIVE;
+    }
+    fdpFishTable[i]->fishInstance->init();
+    elhLog.FishBorn(fdpFishTable[i]->iId);
+}
+
+bool Host::ReviveFish(int id){
+    FishData_t* fd = fdpIdTable[id];
+    if (fd->iRoundSinceDead == iReviveAfterRound){
+        std::pair<int, int> coord;
+        fd->fishInstance->revive(coord.first, coord.second);
+
+        {
+            wxMutexLocker lock(mutex);
+            if (!IfCoordValid(coord.first, coord.second) ||
+                ipMapContent[coord.first][coord.second]!=EMPTY)
+                coord = GetRandomCoord();
+            ipMapContent[coord.first][coord.second] = id;
+            fd->iPosX = coord.first;
+            fd->iPosY = coord.second;
+            fd->iStatus = FishData_t::ALIVE;
+            fd->iHP = max(fd->iMaxHP / 10, 1);
+        }
+        elhLog.FishRevived(id);
+        return true;
+    } else {
+        wxMutexLocker lock(mutex);
+        ++fd->iRoundSinceDead;
+        return false;
+    }
+}
+
+void Host::DecideActionSequence(){
+    static int ipIdList[MAX_PLAYER];
+    std::sort(fdpFishTable, fdpFishTable+iPlayerCount, &ActionPriority);
+    for (int i = 0; i<iPlayerCount; ++i)
+        ipIdList[i] = fdpFishTable[i]->iId;
+    elhLog.SequenceDecided(ipIdList);
+}
+
+void Host::ActivateFish(int id){
+    FishData_t* fd = fdpIdTable[id];
+    if (fd->iStatus == FishData_t::DEAD) return;
+
+    fd->iPhase = FishData_t::START;
+    elhLog.FishInAction(id);
+    fd->fishInstance->play();
+    fd->iPhase = FishData_t::END;
+    elhLog.FishActionFinished(id);
+}
+
+void Host::EndGame(){
+    static int ipIdList[MAX_PLAYER];
+    std::sort(fdpFishTable, fdpFishTable+iPlayerCount, &PointPriority);
+    for (int i = 0; i<iPlayerCount; ++i)
+        ipIdList[i] = fdpFishTable[i]->iId;
+    elhLog.GameEnded(time(0), ipIdList);
+    iHostStatus = END;
+}
+
+bool Host::Pause(int pauseType){
+    wxMutexLocker lock(mutex);
+    SendPauseSignal(pauseType);
+    condition.Wait();
+    if (ForceEnd()) {
+        EndGame();
+        return true;
+    }
+    return false;
 }
 
 bool Host::Start(){
@@ -411,77 +507,40 @@ bool Host::Start(){
         elhLog.GameStarted(time(0));
 
         //preparation
-            RefreshFood();  //refresh food
             for (int i=0; i<iPlayerCount; ++i){
-                std::pair<int, int> coord = GetRandomCoord();
-                fdpFishTable[i]->iPosX = coord.first;
-                fdpFishTable[i]->iPosY = coord.second;
-                ipMapContent[coord.first][coord.second] = fdpFishTable[i]->iId;
-                fdpFishTable[i]->iStatus = FishData_t::ALIVE;
-                elhLog.FishBorn(fdpFishTable[i]->iId);
-            }   //get fish born
-            for (int i=0; i<iPlayerCount; ++i){
-                elhLog.FishInitializing(fdpFishTable[i]->iId);
-                fdpFishTable[i]->fishInstance->init();
-            }   //invoke init()
+                InitializeFish(i);
+                if (Pause(PAUSE_INIT)) return true;
+            }
 
         //ongoing
         for (int iRoundCount=0; iRoundCount<MAX_ROUND; ++iRoundCount){
-            if (iRoundCount!=0 && iRoundCount % FOOD_ROUND == 0) RefreshFood();     //refresh food every FOOD_ROUND rounds
+            if (iRoundCount % FOOD_ROUND == 0) RefreshFood();     //refresh food every FOOD_ROUND rounds
+            if (Pause(PAUSE_ROUND_START)) return true;   //  Wait for resuming signal
+
             elhLog.RoundStarted(iRoundCount);
 
             {
                 int j = 0;
                 for (int i = 0; i<iDeathCount; ++i){
-                    if (fdpDeathTable[i]->iRoundSinceDead == iReviveAfterRound){
-                        std::pair<int, int> coord;
-                        fdpDeathTable[i]->fishInstance->revive(coord.first, coord.second);
-                        if (!IfCoordValid(coord.first, coord.second) ||
-                            ipMapContent[coord.first][coord.second]!=EMPTY)
-                        coord = GetRandomCoord();
-                        ipMapContent[coord.first][coord.second] = fdpDeathTable[i]->iId;
-                        fdpDeathTable[i]->iPosX = coord.first;
-                        fdpDeathTable[i]->iPosY = coord.second;
-                        fdpDeathTable[i]->iStatus = FishData_t::ALIVE;
-                        fdpDeathTable[i]->iHP = max(fdpDeathTable[i]->iMaxHP / 10, 1);
-                        elhLog.FishRevived(fdpDeathTable[i]->iId);
-                    } else {
-                        ++fdpDeathTable[i]->iRoundSinceDead;
+                    if (!ReviveFish(fdpDeathTable[i]->iId)){
                         fdpDeathTable[j++] = fdpDeathTable[i];
                     }
+                    if (Pause(PAUSE_REVIVE)) return true;
                 }
                 iDeathCount = j;
             }   // revive fish
 
-            {
-                std::sort(fdpFishTable, fdpFishTable+iPlayerCount, &ActionPriority);
-                int ipIdList[MAX_PLAYER];
-                for (int iCurrentFish = 0; iCurrentFish<iPlayerCount; ++iCurrentFish)
-                    ipIdList[iCurrentFish] = fdpFishTable[iCurrentFish]->iId;
-                elhLog.SequenceDecided(ipIdList);
-            }   // Decide sequence
+            DecideActionSequence();
+            if (Pause(PAUSE_SEQUENCE_DECIDED)) return true;
 
-            // round started
-
-            for (int iCurrentFish = 0; iCurrentFish<iPlayerCount; ++iCurrentFish){
-                if (fdpFishTable[iCurrentFish]->iStatus == FishData_t::DEAD) continue;
-                fdpFishTable[iCurrentFish]->iPhase = FishData_t::START;
-                    elhLog.FishInAction(fdpFishTable[iCurrentFish]->iId);
-                    fdpFishTable[iCurrentFish]->fishInstance->play();
-                fdpFishTable[iCurrentFish]->iPhase = FishData_t::END;
+            // Activate each fish
+            for (int i = 0; i<iPlayerCount; ++i){
+                ActivateFish(fdpFishTable[i]->iId);
+                if (Pause(PAUSE_FISH_ROUND_FINISHED)) return true;
             }
         }
 
-
-        {
-            std::sort(fdpFishTable, fdpFishTable+iPlayerCount, &PointPriority);
-            int ipIdList[MAX_PLAYER];
-            for (int iCurrentFish = 0; iCurrentFish<iPlayerCount; ++iCurrentFish)
-                    ipIdList[iCurrentFish] = fdpFishTable[iCurrentFish]->iId;
-            elhLog.GameEnded(time(0), ipIdList);
-
-        } // report that the game has ended
-        iHostStatus = END;
+        EndGame(); // report that the game has ended
         return true;
     }
     return false;

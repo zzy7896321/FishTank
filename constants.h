@@ -10,7 +10,7 @@ const int EMPTY=0;//格子为空
 const int FOOD=-1;//食物
 const int LEVEL_POINT=3;//升级能获得的点数
 
-const int INVALID_VALUE = -100; //invalid position mark
+const int INVALID_VALUE = -2; //invalid position mark
 const int INITIAL_PROPERTY_POINT = 10;  //initial property point when each fish is born
 const int MAX_ROUND = 500; //number of rounds in a single game
 
