@@ -63,6 +63,10 @@ int fish::getID(){
     return iId;
 }
 
+int fish::getTotalPlayer(){
+    return host.getPlayerCount();
+}
+
 int fish::askWhat(int x, int y){
     return host.getMapContentWithId(x, y, iId);
 }

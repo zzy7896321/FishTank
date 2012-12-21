@@ -1,6 +1,7 @@
 #pragma once
 
 #include "constants.h"
+#include <cstdlib>
 
 class Host;
 
@@ -24,6 +25,7 @@ public:
     int getAtt();//返回当前玩家攻击力
     int getSp();//返回当前玩家速度
     int getID();//获取玩家ID
+    int getTotalPlayer();//获取玩家总人数
     int askWhat(int,int);//返回地图某个位置内容（玩家ID或FOOD或EMPTY）
     int askHP(int);//询问某个玩家ID当前血量
     bool increaseHealth();//增加health属性1
