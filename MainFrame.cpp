@@ -245,6 +245,14 @@ void MainFrame::OnGameEnded(ftEventWithIntArray& event){
         int id = event.arr1[i];
         RetrieveAllDataFromHost(id);
     }
+
+    iHostStatus = HOST_STOPED;
+    ToolBar->EnableTool(ID_StartButton, true);
+    ToolBar->EnableTool(ID_PauseButton, false);
+    ToolBar->EnableTool(ID_StopButton, false);
+    MenuControl->Enable(ID_MenuControl_Start, true);
+    MenuControl->Enable(ID_MenuControl_Pause, false);
+    MenuControl->Enable(ID_MenuControl_Stop, false);
 }
 
 void MainFrame::OnSequenceDecided(ftEventWithIntArray& event){
@@ -361,43 +369,6 @@ void MainFrame::OnFishMoveAnimationFinished(ftEventWithID& event){
     mutex.Unlock();
 }
 
-/*void MainFrame::ProcessAllPendingNotifications(){
-    wxLogMessage(wxString::Format(wxT("id = %d, target = %d"), ipActionSequence[iInAction], iTarget));
-    if (iTarget!=EMPTY) PromptText(wxString::Format(wxT("Fish %d attemps to attack %s at (%d, %d). Success."),
-                                ipActionSequence[iInAction],
-                                (iTarget == FOOD)? wxT("FOOD") : (wxString::Format(wxT("fish %d"), iTarget).c_str()),
-                                iTargetX, iTargetY));
-    if (iTarget == FOOD){
-        tankCanvas->SetGrid(iTargetX, iTargetY, 0);
-    }
-    else if (iTarget != EMPTY) {
-        if (iTargetHP == 0){
-            tankCanvas->SetGrid(iTargetX, iTargetY, 0);
-            DataList->SetItem(ipIDTable[iTarget], DL_STATUS, wxT("DEAD"));
-            DataList->SetItem(ipIDTable[iTarget], DL_POS, wxString::Format(wxT("(%d, %d)"), INVALID_VALUE, INVALID_VALUE));
-            DataList->SetItem(ipIDTable[iTarget], DL_HP, wxT("0"));
-            mutex.Lock();
-                DataList->SetItem(ipIDTable[iTarget], DL_DEATH, wxString::Format(wxT("%d"), host->getDeadCount(iTarget)));
-            mutex.Unlock();
-        } else {
-            tankCanvas->SetGrid(iTargetX, iTargetY, iTarget, iTargetHP*100 / iTargetMaxHP);
-            DataList->SetItem(ipIDTable[iTarget], DL_HP, wxString::Format(wxT("%d"), iTargetHP));
-        }
-    }
-        int id = ipActionSequence[iInAction];
-        if (iNewAttack!=-2) DataList->SetItem(ipIDTable[id], DL_ATTACK, wxString::Format(wxT("%d"), iNewAttack));
-        if (iNewExp!=-2) DataList->SetItem(ipIDTable[id], DL_EXP, wxString::Format(wxT("%d"), iNewExp));
-        if (iNewHP!=-2) DataList->SetItem(ipIDTable[id], DL_HP, wxString::Format(wxT("%d"), iNewHP));
-        if (iNewLevel!=-2) DataList->SetItem(ipIDTable[id], DL_LEVEL, wxString::Format(wxT("%d"), iNewLevel));
-        if (iNewMaxHP!=-2) DataList->SetItem(ipIDTable[id], DL_MAXHP, wxString::Format(wxT("%d"), iNewHP));
-        if (iNewPropPoint!=-2) DataList->SetItem(ipIDTable[id], DL_PROPPOINT, wxString::Format(wxT("%d"), iNewPropPoint));
-        if (iNewSpeed!=-2) DataList->SetItem(ipIDTable[id], DL_SPEED, wxString::Format(wxT("%d"), iNewSpeed));
-        mutex.Lock();
-            if (iNewHP!=-2) tankCanvas->SetGrid(host->getX(id), host->getY(id), id, iNewHP*100 / iNewMaxHP);
-            DataList->SetItem(ipIDTable[id], DL_BONUS, wxString::Format(wxT("%d"), host->getKillBonus(id)));
-            DataList->SetItem(ipIDTable[id], DL_KILL, wxString::Format(wxT("%d"), host->getKillCount(id)));
-        mutex.Unlock();
-}   */
 void MainFrame::OnFishHealthIncreased(ftEventWithID& event){
     SetDataItem(event.iId, DL_MAXHP, event.x);
     SetDataItem(event.iId, DL_PROPPOINT, event.y);
